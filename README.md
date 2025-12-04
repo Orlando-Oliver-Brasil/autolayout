@@ -15,7 +15,8 @@ Sistema backend robusto para plataforma de geração de layouts de email com ass
 - [📁 Arquitetura](#-arquitetura)
 - [🛡️ Segurança](#️-segurança)
 - [📧 Sistema de Email](#-sistema-de-email)
-- [🔌 GitHub Repository](#-github-repository)
+- [👤 Autor](#-autor)
+- [📄 Licença](https://github.com/Orlando-Oliver-Brasil/autolayout?tab=License-1-ov-file)
 
 
 ## 🛠️ Tecnologias
@@ -400,22 +401,7 @@ await mailService.sendNotification(
 )
 ```
 
-## 🔌 GitHub Repository
-
-**Repository**: [https://github.com/Orlando-Oliver-Brasil/autolayout.git](https://github.com/Orlando-Oliver-Brasil/autolayout.git)
-
-### Estrutura do Repositório
-```
-autolayout.gi/
-├── backend/              # API Backend (este projeto)
-```
-
-## 📄 Licença
-
-ISC
-
 ## 👤 Autor
 
 **Orlando Libardi**
 orlando.libardi@gmail.com | orlandolibardi@oliver.agency
-
