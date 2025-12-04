@@ -1,0 +1,23 @@
+Bem-vindo ao Autolayout!
+
+Olá, {{userName}}!
+
+Sua conta foi criada com sucesso no sistema Autolayout. Agora você pode gerar layouts de email incríveis com inteligência artificial!
+
+🎯 O que você pode fazer:
+- Gerar layouts com IA avançada
+- Criar emails em segundos
+- Personalizar completamente seus designs
+- Colaborar com sua equipe
+
+📋 Suas credenciais de acesso:
+Email: {{userEmail}}
+Senha temporária: {{temporaryPassword}}
+Nível de acesso: {{userLevel}}
+
+🚀 Acesse agora: {{loginUrl}}
+
+🔒 IMPORTANTE: Por segurança, altere sua senha no primeiro acesso.
+
+© 2025 Autolayout - Sistema de Geração de Layouts de Email
+Precisa de ajuda? Entre em contato conosco.

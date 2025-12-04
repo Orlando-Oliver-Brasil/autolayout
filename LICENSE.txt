@@ -1,0 +1,21 @@
+Copyright (c) 2025 Autolayout - Oliver Brasil - Orlando Libardi
+
+Todos os direitos reservados.
+
+Este software e a documentação associada são propriedade privada e confidencial.
+
+RESTRIÇÕES:
+
+1. PROIBIDO o uso deste software sem autorização expressa por escrito.
+2. PROIBIDA a cópia, modificação ou distribuição deste software.
+3. PROIBIDA a engenharia reversa, descompilação ou desmontagem.
+4. PROIBIDO o uso comercial ou redistribuição sob qualquer forma.
+
+O uso não autorizado deste software pode resultar em ações legais civis e criminais.
+
+ESTE SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIAS DE QUALQUER TIPO,
+EXPRESSAS OU IMPLÍCITAS, INCLUINDO, MAS NÃO SE LIMITANDO A, GARANTIAS
+DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NÃO VIOLAÇÃO.
+
+EM NENHUMA CIRCUNSTÂNCIA OS AUTORES OU DETENTORES DOS DIREITOS AUTORAIS
+SERÃO RESPONSÁVEIS POR QUALQUER RECLAMAÇÃO, DANOS OU OUTRA RESPONSABILIDADE.

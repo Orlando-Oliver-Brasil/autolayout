@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bem-vindo ao Autolayout</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      line-height: 1.6; 
+      color: #333; 
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container { 
+      max-width: 600px; 
+      margin: 0 auto; 
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .header { 
+      background: linear-gradient(135deg, #28a745, #20c997);
+      color: white; 
+      padding: 30px 20px; 
+      text-align: center;
+      border-radius: 8px 8px 0 0;
+      margin: -20px -20px 0 -20px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 28px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .welcome-icon {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .content { 
+      padding: 30px 20px; 
+    }
+    .credentials { 
+      background-color: #f8f9fa; 
+      padding: 20px; 
+      border-radius: 8px; 
+      margin: 20px 0;
+      border-left: 4px solid #28a745;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .credentials h3 {
+      margin-top: 0;
+      color: #28a745;
+    }
+    .credentials code {
+      background-color: #e9ecef;
+      padding: 4px 8px;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+      font-weight: bold;
+      color: #495057;
+    }
+    .button { 
+      display: inline-block; 
+      background: linear-gradient(135deg, #28a745, #20c997);
+      color: white !important; 
+      padding: 15px 40px; 
+      text-decoration: none; 
+      border-radius: 25px; 
+      margin: 20px 0;
+      font-weight: bold;
+      font-size: 16px;
+      box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+      transition: all 0.3s ease;
+    }
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(40, 167, 69, 0.4);
+    }
+    .footer { 
+      background-color: #f8f9fa; 
+      padding: 20px; 
+      text-align: center; 
+      font-size: 14px; 
+      color: #6c757d;
+      border-radius: 0 0 8px 8px;
+      margin: 30px -20px -20px -20px;
+    }
+    .security-notice {
+      background-color: #e7f3ff;
+      border: 1px solid #b3d9ff;
+      padding: 15px;
+      border-radius: 5px;
+      margin: 20px 0;
+      border-left: 4px solid #007bff;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin: 20px 0;
+    }
+    .feature {
+      text-align: center;
+      padding: 15px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      border-top: 3px solid #28a745;
+    }
+    .feature-icon {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="welcome-icon">🎉</div>
+      <h1>Bem-vindo ao Autolayout!</h1>
+      <p style="margin: 10px 0 0 0; font-size: 16px;">Sua jornada na criação de emails incríveis começa agora</p>
+    </div>
+    
+    <div class="content">
+      <p>Olá, <strong>{{userName}}</strong>!</p>
+      
+      <p>Sua conta foi criada com sucesso no sistema Autolayout. Agora você pode gerar layouts de email incríveis com inteligência artificial!</p>
+      
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">🤖</div>
+          <strong>IA Avançada</strong>
+          <p style="font-size: 12px; margin: 5px 0 0 0;">Layouts inteligentes</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">⚡</div>
+          <strong>Rápido</strong>
+          <p style="font-size: 12px; margin: 5px 0 0 0;">Geração em segundos</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🎨</div>
+          <strong>Personalizável</strong>
+          <p style="font-size: 12px; margin: 5px 0 0 0;">Totalmente adaptável</p>
+        </div>
+      </div>
+      
+      <div class="credentials">
+        <h3>📋 Suas credenciais de acesso:</h3>
+        <p><strong>Email:</strong> {{userEmail}}</p>
+        <p><strong>Senha temporária:</strong> <code>{{temporaryPassword}}</code></p>
+        <p><strong>Nível de acesso:</strong> <span style="color: #28a745; font-weight: bold;">{{userLevel}}</span></p>
+      </div>
+      
+      <div class="text-center">
+        <a href="{{loginUrl}}" class="button">🚀 Fazer Login Agora</a>
+      </div>
+      
+      <div class="security-notice">
+        <strong>🔒 Segurança em Primeiro Lugar:</strong>
+        <p style="margin: 10px 0 0 0;">Por segurança, recomendamos que você altere sua senha no primeiro acesso. Acesse seu perfil após o login para definir uma nova senha.</p>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>© 2025 Autolayout - Sistema de Geração de Layouts de Email</p>
+      <p>Precisa de ajuda? Entre em contato conosco.</p>
+    </div>
+  </div>
+</body>
+</html>
