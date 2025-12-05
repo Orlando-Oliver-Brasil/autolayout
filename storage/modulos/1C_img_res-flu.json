@@ -1,0 +1,57 @@
+{
+  "module_name": "1C_img_res-flu",
+  "module_description": "Módulo de uma coluna para imagem",
+  "supported_types": ["imagem"],
+  "purpose": "Atrair a atenção inicial, criar impacto visual imediato ou reforçar conceito/mensagem central através de uma imagem de grande destaque.",
+  "usage_context": [
+    "Topo do e-mail, logo após a introdução",
+    "Logo abaixo do cabeçalho para criar impacto inicial",
+    "Antes de uma seção explicativa, preparando contexto visual",
+    "Em campanhas de lançamento de produto para destaque visual",
+    "E-mails de branding, eventos ou promoções sazonais",
+    "Para campanhas com foco inspiracional/emocional"
+  ],
+  "accepts": {
+    "image": {
+      "required": true,
+      "description": "Imagem principal do módulo.",
+      "content_suport": true
+    }
+  },
+  "possible_structures": [
+    ["image"]
+  ],
+  "visual_priority": "máxima",
+  "strategic_recommendations": [
+    "Use quando for necessário gerar forte impacto visual logo ao abrir o e-mail.",
+    "Ideal para reforçar mensagens onde a imagem comunica mais que texto (branding, lifestyle, inspirações, emoção, lançamento visual de produto).",
+    "Evite usar múltiplas vezes para não perder efeito de destaque e não tornar o e-mail pesado.",
+    "Combine com módulos de texto/título logo abaixo para ampliar contexto, mas não sobrecarregue o módulo com informações.",
+    "Prefira imagens de alta qualidade e relevância direta ao tema do e-mail; evite imagens genéricas.",
+    "Permaneça atento à responsividade: utilize imagens otimizadas para desktop e mobile.",
+    "Não utilize para conteúdos puramente informativos sem apelo visual.",
+    "Não inclua call to action neste módulo; o foco deve ser o impacto visual."
+  ],
+  "variation_allowed": [
+    "Variação da imagem para campanhas diferentes (temáticas/eventos/produtos)",
+    "Alteração de cor de fundo do bloco (para temas visuais específicos ou sazonalidade)",
+    "Opção de bordas arredondadas ou retas",
+    "Possibilidade de ajustar a altura da imagem (ex: recortes horizontais em vez de verticalizados)",
+    "Permitir ausência de sombra no contorno"
+  ],
+  "examples": [
+    {
+      "image": "https://cdn.suaempresa.com/email-marketing/lancamento-produto.png"
+    }
+  ],
+  "tags": [
+    "destaque",
+    "branding",
+    "visual-impact",
+    "topo",
+    "lançamento",
+    "eventos",
+    "inspiração",
+    "emocional"
+  ]
+}

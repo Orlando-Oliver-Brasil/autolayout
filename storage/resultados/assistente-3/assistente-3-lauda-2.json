@@ -1,0 +1,145 @@
+{
+  "email_layout": {
+    "total_modules": 7,
+    "layout_strategy": "Cada seção foi mapeada em um módulo distinto ou otimizado, agrupando títulos e parágrafos compatíveis conforme possível_structures. Header posicionado no topo. CTAs destacados ao final em módulo próprio de alta visibilidade. Títulos e textos mantidos juntos onde compatível, maximizando campos dos módulos. Nenhum conteúdo perdido, máxima clareza visual e escaneabilidade.",
+    "modules": [
+      {
+        "module_position": 1,
+        "module_name": "header_res-flu",
+        "module_purpose": "Header informativo do email",
+        "content_mapping": {
+          "title": "Informações e novidades sobre investimentos"
+        },
+        "source_sections": [],
+        "content_elements_used": [
+          "header"
+        ]
+      },
+      {
+        "module_position": 2,
+        "module_name": "1C_tit_res-flu",
+        "module_purpose": "Saudação inicial personalizada",
+        "content_mapping": {
+          "title": "%%Primeiro_Nome%%, confira o que te espera no aplicativo vizinho:"
+        },
+        "source_sections": [
+          1
+        ],
+        "content_elements_used": [
+          "titulo"
+        ]
+      },
+      {
+        "module_position": 3,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Bloco de benefício: atualizações do mercado",
+        "content_mapping": {
+          "icon": "investment_market_base",
+          "title": "Atualizações do mercado diretamente com quem entende",
+          "text": "Descubra as notícias que movimentam o mercado a partir de conteúdos produzidos pelo nosso time especializado."
+        },
+        "source_sections": [
+          2
+        ],
+        "content_elements_used": [
+          "subtitulo",
+          "paragrafo"
+        ]
+      },
+      {
+        "module_position": 4,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Bloco de benefício: conteúdo relevante para aprofundamento",
+        "content_mapping": {
+          "icon": "education_base",
+          "title": "Conteúdo relevante para quem quer se aprofundar",
+          "text": "Conheça e entenda como funcionam os principais produtos, estratégias e serviços disponíveis no mercado."
+        },
+        "source_sections": [
+          3
+        ],
+        "content_elements_used": [
+          "subtitulo",
+          "paragrafo"
+        ]
+      },
+      {
+        "module_position": 5,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Bloco de benefício: novidades Uniclass",
+        "content_mapping": {
+          "icon": "newspaper_base",
+          "title": "Novidades que o Itaú Uniclass tem para você",
+          "text": "Saiba sobre novas funcionalidades e serviços no aplicativo, lançamentos de produtos e mais: tudo isso em um só lugar."
+        },
+        "source_sections": [
+          4
+        ],
+        "content_elements_used": [
+          "subtitulo",
+          "paragrafo"
+        ]
+      },
+      {
+        "module_position": 6,
+        "module_name": "1C_txt_res-flu",
+        "module_purpose": "Mensagem de fechamento",
+        "content_mapping": {
+          "text": "Com o canal certo, você investe seu tempo na direção do seu futuro e otimiza seus investimentos com informações de excelência."
+        },
+        "source_sections": [
+          5
+        ],
+        "content_elements_used": [
+          "paragrafo"
+        ]
+      },
+      {
+        "module_position": 7,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "CTA destacado",
+        "content_mapping": {
+          "icon": "investment_apply_base",
+          "text": "Pronto para investir e acompanhar as novidades?",
+          "button": "acessar agora"
+        },
+        "source_sections": [
+          6
+        ],
+        "content_elements_used": [
+          "cta"
+        ]
+      }
+    ]
+  },
+  "layout_analysis": {
+    "content_distribution": "Conteúdo principal distribuído em módulos sequenciais de benefícios e novidades, intercalando informação com apelo visual de ícones e agrupando títulos e textos relacionados. Modularização garante fluxo de leitura claro até o CTA final.",
+    "visual_hierarchy": "Header encabeça o email, seguido por saudação. Blocos de benefício (cada um em 1C_icon_res-flu com título e texto) maximizam escaneabilidade e dão ritmo visual. CTA destacado no final, fechando o fluxo com chamada forte para ação.",
+    "strategic_notes": "Otimização máxima usando módulos de benefício com ícone, título e texto sempre que possível. CTA nunca isolado, sempre acompanhado de contexto textual conforme estrutura permitida. Cumprimento rigoroso das regras de validação das estruturas, uso consistente de agrupamento de seções compatíveis e priorização do CTA ao final."
+  },
+  "icon_selections": {
+    "replacements_made": 4,
+    "validation_status": "APPROVED",
+    "search_keywords_used": [
+      "investimento",
+      "mercado",
+      "educação",
+      "relevante",
+      "novidades",
+      "notícias",
+      "cta"
+    ],
+    "rejected_icons": [
+      "icone-atualizacoes-mercado",
+      "icone-conteudo-relevante",
+      "icone-novidades-uniclass",
+      "icone-cta"
+    ],
+    "approved_icons": [
+      "investment_market_base",
+      "education_base",
+      "newspaper_base",
+      "investment_apply_base"
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "module_name": "2C_icon_res-flu",
+  "module_description": "Módulo de duas colunas para Ícone, Título, Texto e Botão",
+  "supported_types": ["titulo", "paragrafo", "topico", "cta"],
+  "purpose": "Apresentar de forma focada um destaque, benefício, orientação ou ação relevante, conduzindo o leitor a realizar uma ação estratégica (como saber mais, iniciar um fluxo ou acessar recurso).",
+  "usage_context": [
+    "Após introdução, para reforçar benefício ou funcionalidade",
+    "Antes de seções de produtos para destacar uma novidade ou chamada relevante",
+    "Para onboarding e guiar o usuário em passos iniciais",
+    "Em campanhas que dependem de ação única clara, como reativação ou cross-sell"
+  ],
+  "accepts": {
+    "icon": {
+      "required": true,
+      "type": "imagem",
+      "size_limit": "24x24px",
+      "content_suport": true
+    },
+    "title": {
+      "required": false,
+      "type": "texto curto",
+      "char_limit": 60,
+      "content_suport": true
+    },
+    "text": {
+      "required": false,
+      "type": "texto parágrafo",
+      "char_limit": 160,
+      "content_suport": true
+    },
+    "button": {
+      "required": false,
+      "type": "texto curto no botão + URL",
+      "char_limit": 20,
+      "content_suport": true
+    }
+  },
+  "possible_structures": [
+    ["icon", "title", "text", "button"],
+    ["icon", "title", "text"],
+    ["icon", "title", "button"],
+    ["icon", "title"],
+    ["icon", "text", "button"],
+    ["icon", "text"]
+  ],
+  "visual_priority": "alta",
+  "strategic_recommendations": [
+    "Use para chamar atenção a um aspecto que precisa de decisão ou ação rápida, como um novo recurso, oferta, lembrete de ação.",
+    "Ideal para onboarding e fluxos educativos, pois combina clareza textual com chamada para ação.",
+    "Funciona bem em sequência antes de listagens ou conteúdos de suporte, guiando o leitor na jornada."
+  ],
+  "variation_allowed" : [
+    "Alterar alinhamento: ícone à direita (em situações de AB test ou repetição)"
+  ],
+  "examples": [
+    {
+      "icon": "benefit_icon.svg",
+      "title": "Descubra seu benefício exclusivo!",
+      "text": "Aproveite condições especiais feitas para você. Saiba mais sobre as vantagens disponíveis na sua conta.",
+      "button": "Ver benefícios"
+    },
+    {
+      "icon": "onboarding_icon.svg",
+      "title": "Bem-vindo ao nosso serviço!",
+      "text": "Comece agora mesmo configurando seu perfil e explorando as funcionalidades que preparamos para você.",
+      "button": false
+    },
+    {
+      "icon": "alert_icon.svg",
+      "title": "Atualize suas informações de segurança",
+      "text": false,
+      "button": false
+    }
+  ],
+  "tags": [
+    "destaque",
+    "chamada para ação",
+    "onboarding",
+    "benefício",
+    "lembrete",
+    "informação principal",
+    "orientação",
+    "cross-sell",
+    "lista de benefícios/passos/processos"
+  ]
+}

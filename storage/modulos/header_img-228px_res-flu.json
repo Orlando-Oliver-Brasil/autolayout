@@ -1,0 +1,102 @@
+{
+  "module_name": "header_img-228px_res-flu",
+  "module_description": "Modulo de 2 colunas para header com imagem (lateral) titulo, texto e botão",
+  "supported_types": ["imagem", "titulo", "paragrafo", "cta"],
+  "purpose": "Apresentar um conteúdo principal de destaque aliado à imagem ilustrativa e chamado para ação rápido, facilitando a compreensão e o clique do usuário.",
+  "usage_context": [
+    "topo", "header principal", "primeira seção",
+    "Topo logo após abertura para destacar uma oferta/principal mensagem",
+    "Após introdução para promover produto/serviço-chave",
+    "Em campanhas promocionais e de lançamento",
+    "No início do corpo do e-mail para comunicação de benefício central",
+    "Em e-mails de onboarding para destacar primeiro passo ou ação desejada",
+    "Para campanhas de cross-sell ou up-sell destacando produtos complementares"
+  ],
+  "accepts": {
+    "image": {
+      "required": true,
+      "type": "imagem",
+      "size_recommendation": "228x228px",
+      "content_suport": true
+    },
+    "title": {
+      "required": false,
+      "type": "texto curto",
+      "char_limit": 60,
+      "content_suport": true
+    },
+    "text": {
+      "required": false,
+      "type": "texto parágrafo",
+      "char_limit": 160,
+      "content_suport": true
+    },
+    "button": {
+      "required": false,
+      "type": "texto curto no botão + URL",
+      "char_limit": 20,
+      "content_suport": true
+    }
+  },
+  "possible_structures": [
+    ["image", "title", "text", "button"],
+    ["image", "title", "text"],
+    ["image", "title", "button"],
+    ["image", "title"],
+    ["image", "text", "button"],
+    ["image", "text"]
+  ],
+  "visual_priority": "alta",
+  "strategic_recommendations": [
+    "Prefira como primeiro bloco de destaque.",
+    "Use para destacar o benefício/principal ação desejada num momento em que o usuário ainda está engajado",
+    "Ideal para ofertas, novos lançamentos ou divulgação de benefícios-chave",
+    "Ao agrupar imagem e texto lado a lado, prefira imagens de fácil interpretação e textos objetivos",
+    "Não repetir este módulo na mesma comunicação para preservar o impacto visual"
+  ],
+  "variation_allowed": [
+    "Alternar a posição da imagem (esquerda/direita conforme diagrama geral)",
+    "Ocultar o botão quando ação não for o foco (ex: apenas informativo)",
+    "Permitir ausência do texto quando o título já resumir o benefício"
+  ],
+  "examples": [
+    {
+      "image": "https://www.exemplo.com/imagem-novarecurso.png",
+      "title": "Novo recurso exclusivo para você!",
+      "text": "Descubra como simplificar seu dia com nossa nova ferramenta. Disponível agora mesmo para clientes ativos.",
+      "button": "Experimentar agora"
+    },
+    {
+      "image": "https://www.exemplo.com/imagem-novarecurso.png",
+      "title": "Novo recurso exclusivo para você!",
+      "text": "Descubra como simplificar seu dia com nossa nova ferramenta. Disponível agora mesmo para clientes ativos."
+    },
+    {
+      "image": "https://www.exemplo.com/imagem-novarecurso.png",
+      "title": "Novo recurso exclusivo para você!"
+    },
+    {
+      "image": "https://www.exemplo.com/imagem-novarecurso.png",
+      "text": "Descubra como simplificar seu dia com nossa nova ferramenta. Disponível agora mesmo para clientes ativos."
+    },
+    {
+      "image": "https://www.exemplo.com/imagem-novarecurso.png",
+      "text": "Descubra como simplificar seu dia com nossa nova ferramenta. Disponível agora mesmo para clientes ativos.",
+      "button": "Experimentar agora"
+    },
+    {
+      "image": "https://www.exemplo.com/imagem-novarecurso.png",
+      "title": "Descubra como simplificar seu dia com nossa nova ferramenta. Disponível agora mesmo para clientes ativos.",
+      "button": "Experimentar agora"
+    }
+  ],
+  "tags": [
+    "destaque",
+    "oferta principal",
+    "produto",
+    "onboarding",
+    "cross-sell",
+    "lançamento",
+    "CTA"
+  ]
+}

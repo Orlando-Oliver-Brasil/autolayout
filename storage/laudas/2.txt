@@ -1,0 +1,18 @@
+[Marca]
+Itaú Uniclass
+
+[Produto/Serviço]
+Itaú Uniclass Investimentos
+
+[Header]
+Informações e novidades sobre investimentos 
+
+%%Primeiro_Nome%%, confira o que te espera no aplicativo vizinho: 
+Atualizações do mercado diretamente com quem entende 
+Descubra as notícias que movimentam o mercado a partir de conteúdos produzidos pelo nosso time especializado.
+Conteúdo relevante para quem quer se aprofundar 
+Conheça e entenda como funcionam os principais produtos, estratégias e serviços disponíveis no mercado.
+Novidades que o Itaú Uniclass tem para você
+Saiba sobre novas funcionalidades e serviços no aplicativo, lançamentos de produtos e mais: tudo isso em um só lugar.
+Com o canal certo, você investe seu tempo na direção do seu futuro e otimiza seus investimentos com informações de excelência. 
+[Botão: acessar agora]

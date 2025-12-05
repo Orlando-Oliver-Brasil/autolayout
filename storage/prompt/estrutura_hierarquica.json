@@ -1,0 +1,95 @@
+{
+  "marca": "Itaú Massificado",
+  "produto_servico": "Limite Garantido - Cofrinhos", 
+  "header": "Seu limite do cartão de crédito aumentou! Aproveite as vantagens.",
+  "corpo_email": {
+    "secoes": [
+      {
+        "secao": 1,
+        "conteudo": [
+          {
+            "tipo": "paragrafo",
+            "texto": "Olá, %%=ProperCase([Primeiro_Nome])=%%."
+          },
+          {
+            "tipo": "paragrafo",
+            "texto": "Seu dinheiro aplicado no Cofrinhos já está sendo usado como garantia para aumentar o limite do seu cartão de crédito Itaú Personnalité. Com isso, você tem mais flexibilidade para fazer seus pagamentos e pode realizar as suas compras com mais liberdade."
+          }
+        ]
+      },
+      {
+        "secao": 2,
+        "conteudo": [
+          {
+            "tipo": "titulo",
+            "texto": "E o melhor? Quanto mais você aplica, mais limite você libera."
+          },
+          {
+            "tipo": "subtitulo",
+            "texto": "Confira como é fácil:"
+          },
+          {
+            "tipo": "topico",
+            "texto": "Para cada R$ 1,00 reservado, você tem R$ 1,00 de aumento de limite"
+          },
+          {
+            "tipo": "topico",
+            "texto": "Seu novo limite é liberado na hora, sem complicação"
+          },
+          {
+            "tipo": "topico",
+            "texto": "Tudo direto pelo app Itaú Personnalité, sem análise de crédito"
+          }
+        ]
+      },
+      {
+        "secao": 3,
+        "conteudo": [
+          {
+            "tipo": "titulo",
+            "texto": "Limite Garantido automático e com vantagens exclusivas."
+          },
+          {
+            "tipo": "subtitulo",
+            "texto": "Descubra os benefícios de usar seu dinheiro no Cofrinhos para aumentar seu limite"
+          },
+          {
+            "tipo": "topico",
+            "texto": "Parcele compras à vista no cartão de crédito"
+          },
+          {
+            "tipo": "topico",
+            "texto": "Ganhe descontos na antecipação de parcelas do cartão"
+          },
+          {
+            "tipo": "topico",
+            "texto": "Centralize seus gastos em uma só fatura, com uma data de vencimento"
+          },
+          {
+            "tipo": "topico",
+            "texto": "Aproveite todas as vantagens exclusivas do seu cartão"
+          }
+        ]
+      },
+      {
+        "secao": 4,
+        "conteudo": [
+          {
+            "tipo": "paragrafo",
+            "texto": "Atenção: o dinheiro aplicado no Cofrinhos é apenas uma garantia para seu aumento de limite e não será usado no pagamento da sua fatura. Para ter um limite ainda maior, continue aplicando seu dinheiro pelo app Itaú Personnalité."
+          }
+        ]
+      },
+      {
+        "secao": 5,
+        "conteudo": [
+          {
+            "tipo": "cta",
+            "texto": "Acesse em: Produtos > Cartões > Limite do Cartão > Limite Garantido."
+          }
+        ]
+      }
+    ]
+  },
+  "conteudo_completo": "Olá, %%=ProperCase([Primeiro_Nome])=%%.\n\nSeu dinheiro aplicado no Cofrinhos já está sendo usado como garantia para aumentar o limite do seu cartão de crédito Itaú Personnalité. Com isso, você tem mais flexibilidade para fazer seus pagamentos e pode realizar as suas compras com mais liberdade.\n\nE o melhor? Quanto mais você aplica, mais limite você libera.\n\nConfira como é fácil:\nPara cada R$ 1,00 reservado, você tem R$ 1,00 de aumento de limite\nSeu novo limite é liberado na hora, sem complicação\nTudo direto pelo app Itaú Personnalité, sem análise de crédito\n\nLimite Garantido automático e com vantagens exclusivas.\nDescubra os benefícios de usar seu dinheiro no Cofrinhos para aumentar seu limite\nParcele compras à vista no cartão de crédito\nGanhe descontos na antecipação de parcelas do cartão\nCentralize seus gastos em uma só fatura, com uma data de vencimento\nAproveite todas as vantagens exclusivas do seu cartão\n\nAtenção: o dinheiro aplicado no Cofrinhos é apenas uma garantia para seu aumento de limite e não será usado no pagamento da sua fatura. Para ter um limite ainda maior, continue aplicando seu dinheiro pelo app Itaú Personnalité.\n\nAcesse em: Produtos > Cartões > Limite do Cartão > Limite Garantido."
+}

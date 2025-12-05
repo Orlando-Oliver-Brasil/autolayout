@@ -1,0 +1,142 @@
+{
+  "email_layout": {
+    "total_modules": 7,
+    "layout_strategy": "Estratégia focada em separar claramente as principais etapas da mensagem: abertura forte, apresentação dos benefícios, instrução do processo e reforço do CTA. Agrupamento dos tópicos e alternância de módulos de 1 e 2 colunas para maior escaneabilidade e ênfase nas ações.",
+    "modules": [
+      {
+        "module_position": 1,
+        "module_name": "header_res-flu",
+        "module_purpose": "Header principal do email com grande apelo inicial",
+        "content_mapping": {
+          "title": "Quer parcelar seus boletos e pagar só daqui a 2 meses?",
+          "text": "No app Itaú, você pode!"
+        },
+        "source_sections": [0],
+        "content_elements_used": ["header"]
+      },
+      {
+        "module_position": 2,
+        "module_name": "1C_tit_res-flu",
+        "module_purpose": "Saudação personalizada de abertura",
+        "content_mapping": {
+          "title": "Olá, %%=ProperCase([Primeiro_Nome])=%%!"
+        },
+        "source_sections": [1],
+        "content_elements_used": ["titulo"]
+      },
+      {
+        "module_position": 3,
+        "module_name": "1C_txt_res-flu",
+        "module_purpose": "Explicação inicial da nova funcionalidade e flexibilidade",
+        "content_mapping": {
+          "text": "Além de pagar seus boletos em até 12x no cartão de crédito, agora você também pode escolher quando começar a pagar, seja na fatura atual, na próxima ou:"
+        },
+        "source_sections": [1],
+        "content_elements_used": ["paragrafo"]
+      },
+      {
+        "module_position": 4,
+        "module_name": "2C_tit-btn_res-flu",
+        "module_purpose": "Destaque rápido para oferta principal com chamada à ação",
+        "content_mapping": {
+          "left": {
+            "title": "Comece a pagar só daqui a 2 meses"
+          },
+          "right": {
+            "button": "Parcelar boleto"
+          }
+        },
+        "source_sections": [1],
+        "content_elements_used": ["titulo", "cta"]
+      },
+      {
+        "module_position": 5,
+        "module_name": "1C_tit_res-flu",
+        "module_purpose": "Introdução aos benefícios do serviço",
+        "content_mapping": {
+          "title": "Uma forma prática e 100% digital pra você:"
+        },
+        "source_sections": [2],
+        "content_elements_used": ["subtitulo"]
+      },
+      {
+        "module_position": 6,
+        "module_name": "2C_icon_res-flu",
+        "module_purpose": "Agrupamento de benefícios em destaques visuais",
+        "content_mapping": {
+          "left": {
+            "title": "Centralizar seus gastos",
+            "text": "Organize os boletos no cartão de crédito e facilite seu dia a dia financeiro."
+          },
+          "right": {
+            "title": "Pague do seu jeito",
+            "text": "Parcele em até 12x e defina se a primeira parcela virá na fatura aberta ou em até duas pra frente."
+          }
+        },
+        "source_sections": [2],
+        "content_elements_used": ["topico"]
+      },
+      {
+        "module_position": 7,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Benefício de controle individualizado",
+        "content_mapping": {
+          "title": "Mantenha seu controle",
+          "text": "Escolha a quantidade de parcelas e quando começar a pagar. É simples, direto no app."
+        },
+        "source_sections": [2],
+        "content_elements_used": ["topico"]
+      },
+      {
+        "module_position": 8,
+        "module_name": "1C_tit_res-flu",
+        "module_purpose": "Chamada para instrução passo a passo",
+        "content_mapping": {
+          "title": "Confira o passo a passo para parcelar o seu boleto no app Itaú:"
+        },
+        "source_sections": [3],
+        "content_elements_used": ["subtitulo"]
+      },
+      {
+        "module_position": 9,
+        "module_name": "1C_img_res-flu",
+        "module_purpose": "Demonstração visual do passo a passo (gif)",
+        "content_mapping": {
+          "image": "passo a passo parcelar boleto - gif"
+        },
+        "source_sections": [3],
+        "content_elements_used": ["imagem"]
+      },
+      {
+        "module_position": 10,
+        "module_name": "2C_tit-btn_res-flu",
+        "module_purpose": "Novo reforço para finalizar e CTA novamente em destaque",
+        "content_mapping": {
+          "left": {
+            "title": "Agora é só escolher quando começar a pagar!"
+          },
+          "right": {
+            "button": "Parcelar boleto"
+          }
+        },
+        "source_sections": [4],
+        "content_elements_used": ["titulo", "cta"]
+      },
+      {
+        "module_position": 11,
+        "module_name": "1C_txt_res-flu",
+        "module_purpose": "Observação final (disclaimer legal)",
+        "content_mapping": {
+          "text": "Sujeito a análise de crédito. Consulte condições no app."
+        },
+        "source_sections": [5],
+        "content_elements_used": ["paragrafo"]
+      }
+    ]
+  },
+  "layout_analysis": {
+    "content_distribution": "O conteúdo foi distribuído para criar um storytelling linear: apresentação do diferencial, benefícios, instrução de como fazer e reforço da ação. Os tópicos de benefícios foram agrupados em módulos de duas colunas e tópicos individuais receberam módulos de um bloco para evitar fragmentação.",
+    "visual_hierarchy": "Header abre com destaque, blocos posteriores guiam o usuário pelas vantagens e instruções, sempre reforçando o CTA de parcelamento com módulos próprios para botão. Elementos visuais, como o gif, proporcionam uma pausa visual e reforçam entendimento.",
+    "strategic_notes": "Reforço do CTA em dois pontos estratégicos, intercalando módulos de texto e imagem, facilita escaneabilidade e maximiza conversão. Agrupamento dos tópicos em módulos visuais reduz ruído e reforça os argumentos de forma clara. O disclaimer permanece em bloco separado ao final para garantir entendimento e adequação legal."
+  }
+}

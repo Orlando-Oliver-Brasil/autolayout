@@ -1,0 +1,96 @@
+{
+  "marca": "Itaú Massificado",
+  "produto_servico": "Parcelamento de boletos no cartão de crédito",
+  "header": "Quer parcelar seus boletos e pagar só daqui a 2 meses?  \nNo app Itaú, você pode!",
+  "corpo_email": {
+    "secoes": [
+      {
+        "secao": 1,
+        "conteudo": [
+          {
+            "tipo": "titulo",
+            "texto": "Olá, %%=ProperCase([Primeiro_Nome])=%%!"
+          },
+          {
+            "tipo": "paragrafo",
+            "texto": "Além de pagar seus boletos em até 12x no cartão de crédito, agora você também pode escolher quando começar a pagar, seja na fatura atual, na próxima ou: \nComece a pagar só dDaqui a 2 meses"
+          }
+        ]
+      },
+      {
+        "secao": 2,
+        "conteudo": [
+          {
+            "tipo": "cta",
+            "texto": "Parcelar boleto",
+            "tipo_cta": "botao"
+          }
+        ]
+      },
+      {
+        "secao": 3,
+        "conteudo": [
+          {
+            "tipo": "subtitulo",
+            "texto": "Uma forma prática e 100% digital pra você:"
+          },
+          {
+            "tipo": "topico",
+            "texto": "Centralizar seus gastos\nOrganize os boletos no cartão de crédito e facilite seu dia a dia financeiro."
+          },
+          {
+            "tipo": "topico",
+            "texto": "Pague do seu jeito\nParcele em até 12x e defina se a primeira parcela virá na fatura aberta ou em até duas pra frente."
+          },
+          {
+            "tipo": "topico",
+            "texto": "Mantenha seu controle\nEscolha a quantidade de parcelas e quando começar a pagar. É simples, direto no app."
+          }
+        ]
+      },
+      {
+        "secao": 4,
+        "conteudo": [
+          {
+            "tipo": "subtitulo",
+            "texto": "Confira o passo a passo para parcelar o seu boleto no app Itaú:"
+          },
+          {
+            "tipo": "imagem",
+            "proposito": "passo a passo parcelar boleto",
+            "formato": "gif"
+          }
+        ]
+      },
+      {
+        "secao": 5,
+        "conteudo": [
+          {
+            "tipo": "titulo",
+            "texto": "Agora é só escolher quando começar a pagar!"
+          }
+        ]
+      },
+      {
+        "secao": 6,
+        "conteudo": [
+          {
+            "tipo": "cta",
+            "texto": "Parcelar boleto",
+            "tipo_cta": "botao"
+          }
+        ]
+      },
+      {
+        "secao": 7,
+        "conteudo": [
+          {
+            "tipo": "paragrafo",
+            "texto": "Sujeito a análise de crédito. Consulte condições no app."
+          }
+        ]
+      }
+    ]
+  },
+  "input": "[Marca]\nItaú Massificado\n\n[Produto/Serviço]\nParcelamento de boletos no cartão de crédito\n\n[Header]\nQuer parcelar seus boletos e pagar só daqui a 2 meses?  \nNo app Itaú, você pode! \n\nOlá, %%=ProperCase([Primeiro_Nome])=%%!\nAlém de pagar seus boletos em até 12x no cartão de crédito, agora você também pode escolher quando começar a pagar, seja na fatura atual, na próxima ou: \nComece a pagar só dDaqui a 2 meses \n[Botão: Parcelar boleto] \nUma forma prática e 100% digital pra você: \nCentralizar seus gastos\nOrganize os boletos no cartão de crédito e facilite seu dia a dia financeiro.\nPague do seu jeito\nParcele em até 12x e defina se a primeira parcela virá na fatura aberta ou em até duas pra frente.\nMantenha seu controle\nEscolha a quantidade de parcelas e quando começar a pagar. É simples, direto no app.\nConfira o passo a passo para parcelar o seu boleto no app Itaú:\n[Imagem: passo a passo parcelar boleto - gif]\nAgora é só escolher quando começar a pagar! \n[Botão: Parcelar boleto]\nSujeito a análise de crédito. Consulte condições no app."
+}

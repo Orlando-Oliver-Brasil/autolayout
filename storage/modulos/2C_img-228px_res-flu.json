@@ -1,0 +1,79 @@
+{
+  "module_name": "2C_img-228px_res-flu",
+  "module_description": "Modulo de duas colunas com imagem lateral, título, texto e botão",
+  "supported_types": ["imagem", "titulo", "paragrafo", "cta"],
+  "purpose": "Apresentar um conteúdo destacado (produto, serviço, benefício) de forma visualmente atrativa, facilitando conexão rápida entre imagem, título, explicação e chamada para ação.",
+  "usage_context": [
+    "Após introdução/cabeçalho para destacar um item ou benefício principal",
+    "Em posição intermediária para apresentar vantagens específicas",
+    "Em campanhas de lançamento, promoção, cross-sell ou onboarding",
+    "Quando há necessidade de converter interesse rapidamente via botão"
+  ],
+  "accepts": {
+     "image": {
+      "required": true,
+      "type": "imagem",
+      "size_recommendation": "228x228px",
+      "content_suport": true
+    },
+    "title": {
+      "required": false,
+      "type": "texto curto",
+      "char_limit": 60,
+      "content_suport": true
+    },
+    "text": {
+      "required": false,
+      "type": "texto parágrafo",
+      "char_limit": 160,
+      "content_suport": true
+    },
+    "button": {
+      "required": false,
+      "type": "texto curto no botão + URL",
+      "char_limit": 20,
+      "content_suport": true
+    }
+  },
+  "possible_structures": [
+    ["image", "title", "text", "button"],
+    ["image", "title", "text"],
+    ["image", "title", "button"],
+    ["image", "title"],
+    ["image", "text", "button"],
+    ["image", "text"]
+  ],
+  "visual_priority": "alta",
+  "strategic_recommendations": [
+    "Use para destacar produtos, novos recursos ou benefícios de forma concisa.",
+    "Ótimo para cross-sell e up-sell ao apresentar itens relacionados no contexto da navegação do cliente.",
+    "Funciona bem em campanhas de onboarding quando há a necessidade de instruir e incentivar o primeiro clique.",
+    "Evite repetir mais de duas vezes por e-mail — preservar a força do destaque.",
+    "Combine com módulos de listas para uma experiência sequencial: use este módulo como destaques, seguido de blocos mais simples/descritivos.",
+    "Ideal para estímulo de ação (botão bem visível) após um benefício ou oferta rápida."
+  ],
+  "variation_allowed": [
+    "Alterar alinhamento: imagem à direita (em situações de AB test ou repetição)"
+  ],
+  "examples": [
+    {
+      "title": "Conheça nosso novo app!",
+      "text": "Baixe agora para controlar suas finanças de onde estiver e tenha acesso a ofertas exclusivas.",
+      "button": {
+        "label": "Experimente grátis",
+        "url": "https://meubanco.com/app"
+      },
+      "image": "https://meubanco.com/imagens/app-preview.png"
+    }
+  ],
+  "tags": [
+    "destaque",
+    "produto/serviços",
+    "cross-sell",
+    "lançamento",
+    "benefício",
+    "onboarding",
+    "chamada-para-acao",
+    "chamada-de-noticia"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "module_name": "1C_txt_res-flu",
+  "module_description": "Modulo de uma coluna para texto",
+  "supported_types": ["paragrafo", "topico"],
+  "purpose": "Fornecer uma mensagem textual concisa para informar, contextualizar ou complementar outros módulos do e-mail, servindo como espaço neutro para conteúdo explicativo, instruções ou reforço de mensagem.",
+  "usage_context": [
+    "Após título ou hero image, para contextualização rápida",
+    "Antes de um CTA para reforço de mensagem",
+    "Durante corpo do e-mail para instruções, mensagens institucionais ou explicações",
+    "Em e-mails transacionais para detalhes de pedido ou atualizações",
+    "Em campanhas de onboarding para dar boas-vindas e instrução inicial"
+  ],
+  "accepts": {
+    "text": {
+      "required": true,
+      "character_limit": 280
+    }
+  },
+  "possible_structures": [
+    ["text"]
+  ],
+  "visual_priority": "baixa",
+  "strategic_recommendations": [
+    "Utilize para reforçar informações importantes que precisam ser lidas, mas não exigem destaque visual.",
+    "Ideal para transmitir mensagens institucionais, avisos de segunda prioridade ou explicações detalhadas.",
+    "Evite usar para CTAs ou informações cuja conversão depende de destaque; combine com títulos ou botões em outros módulos.",
+    "Ótimo para cadências de onboarding, acompanhamento pós-compra e comunicações de suporte."
+  ],
+  "variation_allowed": [
+    "Alinhamento do texto (esquerda, centralizado, direita)",
+    "Uso em bloco único ou como parte de um conjunto de paragráfos"
+  ],
+  "examples": [
+    {
+      "text": "Parabéns! Seu pedido foi confirmado e está em preparo. Em breve enviaremos atualizações sobre a entrega."
+    }
+  ],
+  "tags": [
+    "texto",
+    "informativo",
+    "complementar",
+    "institucional",
+    "onboarding",
+    "explicativo",
+    "baixo destaque"
+  ]
+}

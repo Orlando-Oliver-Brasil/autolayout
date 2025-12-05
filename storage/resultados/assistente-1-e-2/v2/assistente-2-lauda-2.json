@@ -1,0 +1,142 @@
+{
+  "email_layout": {
+    "total_modules": 10,
+    "layout_strategy": "Organização sequencial e didática, iniciando pelo header institucional, passando por chamada personalizada, separando os temas em blocos com título/texto, finalizando com um CTA destacado. Títulos e subtítulos usam módulos específicos; texto explicativo entra como 1C_txt_res-flu; CTA forte é destacado via 1C_icon_res-flu.",
+    "modules": [
+      {
+        "module_position": 1,
+        "module_name": "header_res-flu",
+        "module_purpose": "Header principal do e-mail",
+        "content_mapping": {
+          "title": "Informações e novidades sobre investimentos"
+        },
+        "source_sections": [0],
+        "content_elements_used": ["header"]
+      },
+      {
+        "module_position": 2,
+        "module_name": "1C_tit_res-flu",
+        "module_purpose": "Chamada personalizada de abertura",
+        "content_mapping": {
+          "title": "%%Primeiro_Nome%%, confira o que te espera no aplicativo vizinho:"
+        },
+        "source_sections": [1],
+        "content_elements_used": ["titulo"]
+      },
+      {
+        "module_position": 3,
+        "module_name": "1C_line_res-flu",
+        "module_purpose": "Divisor para separar a chamada dos blocos de conteúdo",
+        "content_mapping": {},
+        "source_sections": [1,2]
+      },
+      {
+        "module_position": 4,
+        "module_name": "1C_tit_res-flu",
+        "module_purpose": "Título do primeiro bloco: Atualizações do mercado",
+        "content_mapping": {
+          "title": "Atualizações do mercado diretamente com quem entende"
+        },
+        "source_sections": [2],
+        "content_elements_used": ["subtitulo"]
+      },
+      {
+        "module_position": 5,
+        "module_name": "1C_txt_res-flu",
+        "module_purpose": "Texto explicativo sobre atualizações do mercado",
+        "content_mapping": {
+          "text": "Descubra as notícias que movimentam o mercado a partir de conteúdos produzidos pelo nosso time especializado."
+        },
+        "source_sections": [2],
+        "content_elements_used": ["paragrafo"]
+      },
+      {
+        "module_position": 6,
+        "module_name": "1C_line_res-flu",
+        "module_purpose": "Divisor entre bloco 1 e bloco 2",
+        "content_mapping": {},
+        "source_sections": [2,3]
+      },
+      {
+        "module_position": 7,
+        "module_name": "1C_tit_res-flu",
+        "module_purpose": "Título do segundo bloco: Conteúdo relevante para aprofundamento",
+        "content_mapping": {
+          "title": "Conteúdo relevante para quem quer se aprofundar"
+        },
+        "source_sections": [3],
+        "content_elements_used": ["subtitulo"]
+      },
+      {
+        "module_position": 8,
+        "module_name": "1C_txt_res-flu",
+        "module_purpose": "Texto explicativo sobre aprofundamento",
+        "content_mapping": {
+          "text": "Conheça e entenda como funcionam os principais produtos, estratégias e serviços disponíveis no mercado."
+        },
+        "source_sections": [3],
+        "content_elements_used": ["paragrafo"]
+      },
+      {
+        "module_position": 9,
+        "module_name": "1C_line_res-flu",
+        "module_purpose": "Divisor entre bloco 2 e bloco 3",
+        "content_mapping": {},
+        "source_sections": [3,4]
+      },
+      {
+        "module_position": 10,
+        "module_name": "1C_tit_res-flu",
+        "module_purpose": "Título do terceiro bloco: Novidades exclusivas Itaú Uniclass",
+        "content_mapping": {
+          "title": "Novidades que o Itaú Uniclass tem para você"
+        },
+        "source_sections": [4],
+        "content_elements_used": ["subtitulo"]
+      },
+      {
+        "module_position": 11,
+        "module_name": "1C_txt_res-flu",
+        "module_purpose": "Texto explicativo sobre novidades",
+        "content_mapping": {
+          "text": "Saiba sobre novas funcionalidades e serviços no aplicativo, lançamentos de produtos e mais: tudo isso em um só lugar."
+        },
+        "source_sections": [4],
+        "content_elements_used": ["paragrafo"]
+      },
+      {
+        "module_position": 12,
+        "module_name": "1C_line_res-flu",
+        "module_purpose": "Divisor antes do fechamento",
+        "content_mapping": {},
+        "source_sections": [4,5]
+      },
+      {
+        "module_position": 13,
+        "module_name": "1C_txt_res-flu",
+        "module_purpose": "Mensagem de fechamento dando sentido à experiência",
+        "content_mapping": {
+          "text": "Com o canal certo, você investe seu tempo na direção do seu futuro e otimiza seus investimentos com informações de excelência."
+        },
+        "source_sections": [5],
+        "content_elements_used": ["paragrafo"]
+      },
+      {
+        "module_position": 14,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "CTA destacado e finalização",
+        "content_mapping": {
+          "icon": "icone-cta-acessar",
+          "button": "acessar agora"
+        },
+        "source_sections": [6],
+        "content_elements_used": ["cta"]
+      }
+    ]
+  },
+  "layout_analysis": {
+    "content_distribution": "Conteúdo distribuído em blocos temáticos bem definidos, cada um iniciando por títulos claros que introduzem informação relevante. A explicação e contextualização é feita logo após cada título em módulos de texto. As linhas divisórias reforçam os limites entre os blocos para facilitar a navegação visual. O CTA aparece destacado ao fim, facilitando a conversão.",
+    "visual_hierarchy": "Inicia pelo header institucional, seguido de chamada personalizada, blocos temáticos separados e hierarquizados de acordo com o conteúdo e interesse crescente. O CTA no final recebe destaque visual próprio com ícone, reforçando o convite à ação. Linhas ajudam a segmentar cada grande bloco do email.",
+    "strategic_notes": "Estratégia priorizou clareza temática e valoração do CTA. Nenhum conteúdo foi agrupado incorretamente (um bloco por tópico). Não foram usados módulos de imagem ou binário, pois não havia necessidade para tais formatos no input. O CTA não foi inserido em 2C_tit-btn_res-flu pois não é decisão binária, respeitando a compatibilidade dos módulos. Atendeu-se rigorosamente às especificações."
+  }
+}

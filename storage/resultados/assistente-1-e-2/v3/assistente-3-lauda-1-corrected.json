@@ -1,0 +1,159 @@
+{
+  "email_layout": {
+    "total_modules": 8,
+    "layout_strategy": "Agrupamento por seção, priorizando uso de módulos otimizados para cada combinação de tipos. Saudação e contexto inicial agrupados em 1C_name_res-flu. Tópicos destacados em seus próprios módulos 1C_icon_res-flu, conforme regra crítica para tópicos. Header resumido para impacto imediato. Módulos de texto puro para explicações e orientações, respeitando hierarquia visual e separação conceitual.",
+    "modules": [
+      {
+        "module_position": 1,
+        "module_name": "header_res-flu",
+        "module_purpose": "Header principal do email",
+        "content_mapping": {
+          "title": "Limite Garantido",
+          "text": "Aplicou, liberou. Simples, rápido e seguro!"
+        },
+        "source_sections": [],
+        "content_elements_used": [
+          "header"
+        ]
+      },
+      {
+        "module_position": 2,
+        "module_name": "1C_name_res-flu",
+        "module_purpose": "Saudação inicial personalizada + contexto",
+        "content_mapping": {
+          "title": "Olá, %%=ProperCase([Primeiro_Nome])=%%.",
+          "text": "Você sabia que é possível aumentar cada vez mais o seu limite do cartão de crédito sem precisar passar por uma nova análise de crédito?"
+        },
+        "source_sections": [
+          1
+        ],
+        "content_elements_used": [
+          "titulo",
+          "paragrafo"
+        ]
+      },
+      {
+        "module_position": 3,
+        "module_name": "1C_txt_res-flu",
+        "module_purpose": "Explicação sobre o produto Limite Garantido",
+        "content_mapping": {
+          "text": "Com o Limite Garantido do Itaú Personnalité é assim: quanto mais você aplica no Cofrinhos pelo app, mais limite é disponibilizado no seu cartão de crédito para usar como quiser!"
+        },
+        "source_sections": [
+          2
+        ],
+        "content_elements_used": [
+          "paragrafo"
+        ]
+      },
+      {
+        "module_position": 4,
+        "module_name": "1C_tit_res-flu",
+        "module_purpose": "Subtítulo de incentivo à ação",
+        "content_mapping": {
+          "title": "Continue aplicando para ter um limite cada vez maior:"
+        },
+        "source_sections": [
+          3
+        ],
+        "content_elements_used": [
+          "subtitulo"
+        ]
+      },
+      {
+        "module_position": 5,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Destaque para benefício de aumento de limite proporcional",
+        "content_mapping": {
+          "icon": "credit_auto_base",
+          "title": "Para cada R$ 1,00 reservado, você tem R$ 1,00 de aumento de limite"
+        },
+        "source_sections": [
+          3
+        ],
+        "content_elements_used": [
+          "topico"
+        ]
+      },
+      {
+        "module_position": 6,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Destaque para processo automático de aumento de limite",
+        "content_mapping": {
+          "icon": "credit_auto_base",
+          "title": "Seu limite aumenta de forma automática, sem complicação"
+        },
+        "source_sections": [
+          3
+        ],
+        "content_elements_used": [
+          "topico"
+        ]
+      },
+      {
+        "module_position": 7,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Destaque para manutenção de aplicação e aumento permanente",
+        "content_mapping": {
+          "icon": "investment_apply_base",
+          "title": "Mantenha seu dinheiro aplicado no Cofrinhos para ter seu limite ampliado de forma permanente"
+        },
+        "source_sections": [
+          3
+        ],
+        "content_elements_used": [
+          "topico"
+        ]
+      },
+      {
+        "module_position": 8,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Destaque para flexibilidade no aumento do limite",
+        "content_mapping": {
+          "icon": "credit_custom_base",
+          "title": "Você decide quando aumentar seu limite: do seu jeito e no seu tempo"
+        },
+        "source_sections": [
+          3
+        ],
+        "content_elements_used": [
+          "topico"
+        ]
+      },
+      {
+        "module_position": 9,
+        "module_name": "1C_txt_res-flu",
+        "module_purpose": "Mensagem final de reforço e instrução de acesso",
+        "content_mapping": {
+          "text": "Mais limite para fazer suas compras e mais liberdade para utilizar o seu dinheiro. Acesse o App Itaú Personnalité em Produtos > Cartões > Limite do Cartão > Limite Garantido e saiba mais."
+        },
+        "source_sections": [
+          4
+        ],
+        "content_elements_used": [
+          "paragrafo"
+        ]
+      }
+    ]
+  },
+  "layout_analysis": {
+    "content_distribution": "O conteúdo foi distribuído a partir de um header de impacto, seguido pela saudação personalizada com contexto. Texto explicativo e subtítulo de incentivo criam base, enquanto os tópicos de benefício têm forte destaque visual individual. Finalização com instrução clara e orientada à ação.",
+    "visual_hierarchy": "Header em destaque inicia com impacto. Saudação personalizada conecta individualmente. Explicações e incentivos são fornecidos antes dos benefícios, que aparecem em módulos visuais separados para máxima escaneabilidade. Reforço textual no final orienta a próxima ação.",
+    "strategic_notes": "Priorizei módulos otimizados: header para início; saudação e contexto juntos em 1C_name_res-flu; tópicos de benefício como módulos exclusivos 1C_icon_res-flu seguindo regra de tópicos (jamais agrupados). Mensagem final instrutiva em módulo de texto puro. Não há fragmentação desnecessária nem violação das regras de estruturas permitidas."
+  },
+  "icon_selections": {
+    "replacements_made": 4,
+    "selection_notes": "Para o benefício de aumento proporcional, selecionado 'credit_auto_base' por expressar aumento automático do limite mediante valor reservado. Para processo automático, também 'credit_auto_base', pois tem coerência máxima no contexto de crédito com automação. Para manutenção de aplicação e permanência do limite, escolhido 'investment_apply_base' por associar investimento contínuo a resultado no limite. Para flexibilidade e decisão personalizada, 'credit_custom_base' é o ícone que representa comando e decisão do cliente sobre o limite. Todos os ícones conferidos e aprovados no banco unified_icons.json.",
+    "validation_status": "APPROVED",
+    "rejected_icons": [
+      "trending_up_auto_base",
+      "investment_time_base",
+      "control_custom_base"
+    ],
+    "approved_icons": [
+      "credit_auto_base",
+      "investment_apply_base",
+      "credit_custom_base"
+    ]
+  }
+}

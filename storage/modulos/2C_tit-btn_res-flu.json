@@ -1,0 +1,71 @@
+{
+  "module_name": "2C_tit-btn_res-flu",
+  "module_description": "Módulo de Pergunta Binária com CTA",
+  "supported_types": ["titulo", "cta"],
+  "purpose": "Obter uma resposta direta do usuário sobre uma ação específica (sim/não), facilitando a captura de interesse e encaminhamento para jornadas personalizadas, como confirmação de presença, opt-in de campanhas ou pesquisas rápidas.",
+  "usage_context": [
+    "No topo de e-mails para chamada de ação imediata",
+    "Após apresentação do evento/oferta para captar interesse",
+    "Antes do CTA final para reforçar engajamento",
+    "Em fluxos de onboarding (para configuração de preferências)",
+    "Para segmentação comportamental baseada na resposta",
+    "Em campanhas de RSVP ou confirmação de interesse"
+  ],
+  "accepts": {
+    "title": {
+      "required": false,
+      "type": "texto curto",
+      "char_limit": 60,
+      "content_suport": true
+    },
+    "button_yes": {
+      "required": false,
+      "type": "texto curto no botão + URL",
+      "char_limit": 20,
+      "content_suport": true
+    },
+    "button_no": {
+      "required": false,
+      "type": "texto curto no botão + URL",
+      "char_limit": 20,
+      "content_suport": true
+    }
+  },
+  "possible_structures": [
+    [
+      "title",
+      "button_yes",
+      "button_no"
+    ]
+  ],
+  "visual_priority": "máxima",
+  "strategic_recommendations": [
+    "Utilize para decisões rápidas e objetivas, quando o objetivo é encaminhar o leitor para um fluxo personalizado com base na resposta.",
+    "Ideal após apresentar informações-chave ou benefícios sobre a ação proposta (ex: participação em um evento, aceite de oferta, cadastro em novidades).",
+    "Evite usar em sequência ou repetidamente no mesmo e-mail para não gerar fadiga."
+  ],
+  "variation_allowed": [
+    "Alterar rótulos dos botões (ex: 'Quero', 'Não quero') conforme contexto"
+  ],
+  "examples": [
+    {
+      "title": "Gostaria de participar deste evento?",
+      "button_yes": "Sim",
+      "button_no": "Não"
+    },
+    {
+      "title": "Deseja receber novidades exclusivas?",
+      "button_yes": "Quero receber",
+      "button_no": "Não, obrigado"
+    }
+  ],
+  "tags": [
+    "engajamento",
+    "decisão",
+    "RSVP",
+    "pesquisa rápida",
+    "confirmação",
+    "segmentação",
+    "evento"
+  ]
+}

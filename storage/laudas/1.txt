@@ -1,0 +1,20 @@
+[Marca]
+Itaú Massificado
+
+[Produto/Serviço]
+Limite Garantido - Cofrinhos
+
+[Header]
+Limite Garantido 
+Aplicou, liberou. Simples, rápido e seguro! 
+
+Olá, %%=ProperCase([Primeiro_Nome])=%%.  
+Você sabia que é possível aumentar cada vez mais o seu limite do cartão de crédito sem precisar passar por uma nova análise de crédito?  
+Com o Limite Garantido do Itaú Personnalité é assim: quanto mais você aplica no Cofrinhos pelo app, mais limite é disponibilizado no seu cartão de crédito para usar como quiser! 
+Continue aplicando para ter um limite cada vez maior: 
+Para cada R$ 1,00 reservado, você tem R$ 1,00 de aumento de limite 
+Seu limite aumenta de forma automática, sem complicação 
+Mantenha seu dinheiro aplicado no Cofrinhos para ter seu limite ampliado de forma permanente 
+Você decide quando aumentar seu limite: do seu jeito e no seu tempo 
+Mais limite para fazer suas compras e mais liberdade para utilizar o seu dinheiro. 
+Acesse o App Itaú Personnalité em Produtos > Cartões > Limite do Cartão > Limite Garantido e saiba mais.

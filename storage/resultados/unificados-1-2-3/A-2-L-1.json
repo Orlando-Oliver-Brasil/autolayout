@@ -1,0 +1,131 @@
+{
+  "email_layout": {
+    "total_modules": 8,
+    "layout_strategy": "O layout agrupa conteúdos da mesma seção em módulos otimizados e utiliza módulos individuais para cada tópico, maximizando escaneabilidade e hierarquia visual. O header é sintético, as saudações e explicações iniciais ficam em bloco próprio, e cada benefício/tópico é destacado em módulo próprio. Encerramento e instrução final são destacados por módulos claros e separados.",
+    "modules": [
+      {
+        "module_position": 1,
+        "module_name": "header_res-flu",
+        "module_purpose": "Header principal para apresentar o produto de modo sintético e atrativo",
+        "content_mapping": {
+          "title": "Limite Garantido",
+          "text": "Aplicou, liberou. Simples, rápido e seguro!"
+        },
+        "source_sections": [],
+        "content_elements_used": [
+          "header"
+        ]
+      },
+      {
+        "module_position": 2,
+        "module_name": "1C_name_res-flu",
+        "module_purpose": "Saudação personalizada e contexto explicativo inicial",
+        "content_mapping": {
+          "title": "Olá, %%=ProperCase([Primeiro_Nome])=%%.",
+          "text": "Você sabia que é possível aumentar cada vez mais o seu limite do cartão de crédito sem precisar passar por uma nova análise de crédito?\nCom o Limite Garantido do Itaú Personnalité é assim: quanto mais você aplica no Cofrinhos pelo app, mais limite é disponibilizado no seu cartão de crédito para usar como quiser!"
+        },
+        "source_sections": [
+          1
+        ],
+        "content_elements_used": [
+          "titulo",
+          "paragrafo"
+        ]
+      },
+      {
+        "module_position": 3,
+        "module_name": "1C_tit_res-flu",
+        "module_purpose": "Título introdutório para a seção de benefícios",
+        "content_mapping": {
+          "title": "Continue aplicando para ter um limite cada vez maior:"
+        },
+        "source_sections": [
+          2
+        ],
+        "content_elements_used": [
+          "subtitulo"
+        ]
+      },
+      {
+        "module_position": 4,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Primeiro benefício: aumento proporcional do limite",
+        "content_mapping": {
+          "icon": "icone-beneficio-1",
+          "title": "Para cada R$ 1,00 reservado, você tem R$ 1,00 de aumento de limite"
+        },
+        "source_sections": [
+          2
+        ],
+        "content_elements_used": [
+          "topico"
+        ]
+      },
+      {
+        "module_position": 5,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Segundo benefício: aumento automático",
+        "content_mapping": {
+          "icon": "icone-beneficio-2",
+          "title": "Seu limite aumenta de forma automática, sem complicação"
+        },
+        "source_sections": [
+          2
+        ],
+        "content_elements_used": [
+          "topico"
+        ]
+      },
+      {
+        "module_position": 6,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Terceiro benefício: limite ampliado permanentemente",
+        "content_mapping": {
+          "icon": "icone-beneficio-3",
+          "title": "Mantenha seu dinheiro aplicado no Cofrinhos para ter seu limite ampliado de forma permanente"
+        },
+        "source_sections": [
+          2
+        ],
+        "content_elements_used": [
+          "topico"
+        ]
+      },
+      {
+        "module_position": 7,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Quarto benefício: liberdade na decisão do limite",
+        "content_mapping": {
+          "icon": "icone-beneficio-4",
+          "title": "Você decide quando aumentar seu limite: do seu jeito e no seu tempo"
+        },
+        "source_sections": [
+          2
+        ],
+        "content_elements_used": [
+          "topico"
+        ]
+      },
+      {
+        "module_position": 8,
+        "module_name": "1C_txt_res-flu",
+        "module_purpose": "Fechamento explicativo e chamada para ação",
+        "content_mapping": {
+          "text": "Mais limite para fazer suas compras e mais liberdade para utilizar o seu dinheiro.\nAcesse o App Itaú Personnalité em Produtos > Cartões > Limite do Cartão > Limite Garantido e saiba mais."
+        },
+        "source_sections": [
+          3,
+          4
+        ],
+        "content_elements_used": [
+          "paragrafo"
+        ]
+      }
+    ]
+  },
+  "layout_analysis": {
+    "content_distribution": "O título e slogan foram mapeados para o header, a saudação e explicação para um módulo de nome personalizado, e cada benefício/topico foi destacado como módulo individual com ícone. O fechamento com orientação e incentivo à ação foi agrupado em um bloco de texto para evitar dispersão visual.",
+    "visual_hierarchy": "O header atrai a atenção imediatamente e define o tema. Saudação e contexto vêm em segundo lugar, criando proximidade. Cada benefício aparece em seu próprio bloco visual, garantindo leitura escaneável e destacando os pontos principais. O fechamento reforça a mensagem e inclui a ação necessária.",
+    "strategic_notes": "A estratégia seguiu todas as regras críticas: nenhum campo inventado, tópicos sempre em seus próprios módulos, agrupamento de conteúdos de mesma seção quando permitido e possível_structures validadas para cada módulo. Não houve adição de bulleted list e a diferenciação visual entre as partes do conteúdo é máxima."
+  }
+}

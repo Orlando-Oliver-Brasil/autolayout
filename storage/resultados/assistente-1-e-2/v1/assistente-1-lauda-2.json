@@ -1,0 +1,55 @@
+{
+  "marca": "Itaú Uniclass",
+  "produto_servico": "Itaú Uniclass Investimentos",
+  "header": "Informações e novidades sobre investimentos",
+  "corpo_email": {
+    "secoes": [
+      {
+        "secao": 1,
+        "conteudo": [
+          {
+            "tipo": "titulo",
+            "texto": "%%Primeiro_Nome%%, confira o que te espera no aplicativo vizinho:"
+          }
+        ]
+      },
+      {
+        "secao": 2,
+        "conteudo": [
+          {
+            "tipo": "topico",
+            "texto": "Atualizações do mercado diretamente com quem entende\nDescubra as notícias que movimentam o mercado a partir de conteúdos produzidos pelo nosso time especializado."
+          },
+          {
+            "tipo": "topico",
+            "texto": "Conteúdo relevante para quem quer se aprofundar\nConheça e entenda como funcionam os principais produtos, estratégias e serviços disponíveis no mercado."
+          },
+          {
+            "tipo": "topico",
+            "texto": "Novidades que o Itaú Uniclass tem para você\nSaiba sobre novas funcionalidades e serviços no aplicativo, lançamentos de produtos e mais: tudo isso em um só lugar."
+          }
+        ]
+      },
+      {
+        "secao": 3,
+        "conteudo": [
+          {
+            "tipo": "paragrafo",
+            "texto": "Com o canal certo, você investe seu tempo na direção do seu futuro e otimiza seus investimentos com informações de excelência."
+          }
+        ]
+      },
+      {
+        "secao": 4,
+        "conteudo": [
+          {
+            "tipo": "cta",
+            "texto": "acessar agora",
+            "tipo_cta": "botao"
+          }
+        ]
+      }
+    ]
+  },
+  "input": "[Marca]\nItaú Uniclass\n\n[Produto/Serviço]\nItaú Uniclass Investimentos\n\n[Header]\nInformações e novidades sobre investimentos \n\n%%Primeiro_Nome%%, confira o que te espera no aplicativo vizinho: \nAtualizações do mercado diretamente com quem entende \nDescubra as notícias que movimentam o mercado a partir de conteúdos produzidos pelo nosso time especializado.\nConteúdo relevante para quem quer se aprofundar \nConheça e entenda como funcionam os principais produtos, estratégias e serviços disponíveis no mercado.\nNovidades que o Itaú Uniclass tem para você\nSaiba sobre novas funcionalidades e serviços no aplicativo, lançamentos de produtos e mais: tudo isso em um só lugar.\nCom o canal certo, você investe seu tempo na direção do seu futuro e otimiza seus investimentos com informações de excelência. \n[Botão: acessar agora]"
+}

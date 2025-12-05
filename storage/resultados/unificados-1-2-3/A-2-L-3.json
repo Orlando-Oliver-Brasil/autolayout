@@ -1,0 +1,192 @@
+{
+  "email_layout": {
+    "total_modules": 10,
+    "layout_strategy": "O layout prioriza clareza, escaneabilidade e máxima hierarquia visual, separando cada benefício ou ação importante em módulos próprios. A saudação é agrupada com a explicação inicial, cada CTA é destacado com contexto adequado conforme regras dos módulos, e toda combinação respeita as possible_structures do arquivo de referência. Tópicos são apresentados individualmente e a informação é distribuída por seções lógicas.",
+    "modules": [
+      {
+        "module_position": 1,
+        "module_name": "header_res-flu",
+        "module_purpose": "Header principal do email apresentando o benefício central",
+        "content_mapping": {
+          "title": "Quer parcelar seus boletos e pagar só daqui a 2 meses?",
+          "text": "No app Itaú, você pode!"
+        },
+        "source_sections": [],
+        "content_elements_used": [
+          "header"
+        ]
+      },
+      {
+        "module_position": 2,
+        "module_name": "1C_name_res-flu",
+        "module_purpose": "Saudação personalizada e explicação inicial do benefício",
+        "content_mapping": {
+          "title": "Olá, %%=ProperCase([Primeiro_Nome])=%%!",
+          "text": "Além de pagar seus boletos em até 12x no cartão de crédito, agora você também pode escolher quando começar a pagar, seja na fatura atual, na próxima ou: \nComece a pagar só dDaqui a 2 meses"
+        },
+        "source_sections": [
+          1
+        ],
+        "content_elements_used": [
+          "titulo",
+          "paragrafo"
+        ]
+      },
+      {
+        "module_position": 3,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Primeiro CTA (com contexto explicativo)",
+        "content_mapping": {
+          "icon": "icone-cta-inicial",
+          "text": "Parcelamento flexível pelo app",
+          "button": "Parcelar boleto"
+        },
+        "source_sections": [
+          2
+        ],
+        "content_elements_used": [
+          "cta"
+        ]
+      },
+      {
+        "module_position": 4,
+        "module_name": "1C_tit_res-flu",
+        "module_purpose": "Introdução de benefícios práticos",
+        "content_mapping": {
+          "title": "Uma forma prática e 100% digital pra você:"
+        },
+        "source_sections": [
+          3
+        ],
+        "content_elements_used": [
+          "subtitulo"
+        ]
+      },
+      {
+        "module_position": 5,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Benefício 1: Centralizar gastos",
+        "content_mapping": {
+          "icon": "icone-beneficio-centralizar",
+          "title": "Centralizar seus gastos",
+          "text": "Organize os boletos no cartão de crédito e facilite seu dia a dia financeiro."
+        },
+        "source_sections": [
+          3
+        ],
+        "content_elements_used": [
+          "topico"
+        ]
+      },
+      {
+        "module_position": 6,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Benefício 2: Pague do seu jeito",
+        "content_mapping": {
+          "icon": "icone-beneficio-pagamento",
+          "title": "Pague do seu jeito",
+          "text": "Parcele em até 12x e defina se a primeira parcela virá na fatura aberta ou em até duas pra frente."
+        },
+        "source_sections": [
+          3
+        ],
+        "content_elements_used": [
+          "topico"
+        ]
+      },
+      {
+        "module_position": 7,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Benefício 3: Mantenha seu controle",
+        "content_mapping": {
+          "icon": "icone-beneficio-controle",
+          "title": "Mantenha seu controle",
+          "text": "Escolha a quantidade de parcelas e quando começar a pagar. É simples, direto no app."
+        },
+        "source_sections": [
+          3
+        ],
+        "content_elements_used": [
+          "topico"
+        ]
+      },
+      {
+        "module_position": 8,
+        "module_name": "1C_tit_res-flu",
+        "module_purpose": "Introdução à seção 'passo a passo'",
+        "content_mapping": {
+          "title": "Confira o passo a passo para parcelar o seu boleto no app Itaú:"
+        },
+        "source_sections": [
+          4
+        ],
+        "content_elements_used": [
+          "subtitulo"
+        ]
+      },
+      {
+        "module_position": 9,
+        "module_name": "1C_img_res-flu",
+        "module_purpose": "Exibição do GIF do passo a passo para facilitar a compreensão visual",
+        "content_mapping": {
+          "image": "passo a passo parcelar boleto - gif"
+        },
+        "source_sections": [
+          4
+        ],
+        "content_elements_used": [
+          "imagem"
+        ]
+      },
+      {
+        "module_position": 10,
+        "module_name": "1C_tit_res-flu",
+        "module_purpose": "Refuerzo final: chamada para decidir o momento do pagamento",
+        "content_mapping": {
+          "title": "Agora é só escolher quando começar a pagar!"
+        },
+        "source_sections": [
+          5
+        ],
+        "content_elements_used": [
+          "titulo"
+        ]
+      },
+      {
+        "module_position": 11,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "CTA final destacado",
+        "content_mapping": {
+          "icon": "icone-cta-final",
+          "text": "",
+          "button": "Parcelar boleto"
+        },
+        "source_sections": [
+          6
+        ],
+        "content_elements_used": [
+          "cta"
+        ]
+      },
+      {
+        "module_position": 12,
+        "module_name": "1C_txt_res-flu",
+        "module_purpose": "Aviso obrigatório de condições de crédito",
+        "content_mapping": {
+          "text": "Sujeito a análise de crédito. Consulte condições no app."
+        },
+        "source_sections": [
+          7
+        ],
+        "content_elements_used": [
+          "paragrafo"
+        ]
+      }
+    ]
+  },
+  "layout_analysis": {
+    "content_distribution": "O header e a saudação são destacados logo no início para criar proximidade e contexto com o leitor. O CTA inicial aparece logo em seguida, acompanhado de contexto rápido. Cada vantagem/benefício é trabalhada em módulo próprio, maximizando escaneabilidade. O passo a passo visual recebe título e módulo de imagem próprio. O reforço final antecede um CTA de fechamento, seguido do aviso obrigatório.",
+    "visual_hierarchy": "O email começa com a proposta central, segue com uma saudação personalizada, apresenta as ações principais (CTAs) e diferencia visualmente cada etapa do fluxo do cliente. Cada benefício ou funcionalidade tem seu próprio destaque, facilitando leitura rápida e entendimento total das opções.",
+    "strategic_notes": "Cada bloco foi criado de acordo com a respectiva possible_structures dos módulos disponíveis. Os CTAs usam sempre título/texto de apoio quando inseridos em 1C_icon_res-flu, nunca isolados apenas com button. Todos os tópicos de benefícios são destacados para aumentar a escaneabilidade. Não houve nenhuma criação de campo extra e cada seção foi otimizada para reduzir fragmentação e redundância."
+  }
+}

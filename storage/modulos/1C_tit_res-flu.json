@@ -1,0 +1,47 @@
+{
+  "module_name": "1C_tit_res-flu",
+  "module_description": "Módulo de título para introduzir ou seccionar conteúdo",
+  "supported_types": ["titulo", "subtitulo"],
+  "purpose": "Introduzir ou seccionar conteúdo, orientar o leitor para o próximo bloco de informação, contextualizar rapidamente o tema subsequente do e-mail.",
+  "usage_context": [
+    "No início de uma nova seção do e-mail",
+    "Antes de conteúdos detalhados, listas ou módulos de destaque",
+    "Para separar tópicos em newsletters ou comunicados multiassunto",
+    "Em e-mails curtos com mensagens diretas"
+  ],
+  "accepts": {
+    "title": {
+      "obrigatório": true,
+      "limite_caracteres": 60
+    }
+  },
+  "possible_structures": [
+    ["title"]
+  ],
+  "visual_priority": "alta",
+  "strategic_recommendations": [
+    "Utilize para orientar rapidamente leitores escaneando o e-mail, facilitando a navegação por tópicos.",
+    "Reforce a clareza do conteúdo agrupando matérias, produtos ou comunicações distintas sob títulos objetivos.",
+    "Indique claramente transições de assunto: não use para mensagens promocionais isoladas ou calls to action (para esses, opte por módulos combinados).",
+    "Evite a repetição excessiva desse módulo na mesma peça para não fragmentar o fluxo (máximo recomendado: 3 em e-mails longos).",
+    "Seja sucinto e específico; títulos genéricos perdem impacto.",
+    "Ideal para e-mails informativos, postagens de blog, releases, newsletters e conteúdos educacionais."
+  ],
+  "variation_allowed": [
+    "Alinhamento à esquerda ou centralizado"
+  ],
+  "examples": [
+    {
+      "title": "Conheça nossas novidades!"
+    }
+  ],
+  "tags": [
+    "seção",
+    "informativo",
+    "onboarding",
+    "educacional",
+    "newsletter",
+    "divisor",
+    "curadoria"
+  ]
+}

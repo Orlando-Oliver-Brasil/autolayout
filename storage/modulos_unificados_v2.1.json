@@ -1,0 +1,1116 @@
+﻿{
+    "version":  "2.1-structures-validated",
+    "description":  "Modulos visuais unificados para selecao automatica do Assistente 2 - Versao corrigida com validacao de possible_structures",
+    "validation_notes":  "Todos os modulos validados contra estruturas reais. Campos inventados como left/right removidos. Uso de 2C_tit-btn_res-flu restrito a decisoes binarias. CRITICAL: Validacao obrigatoria de possible_structures - combinacao [icon, button] e proibida no 1C_icon_res-flu.",
+    "generation_date":  "2025-12-05 12:23:28",
+    "modules":  [
+                    {
+                        "module_name":  "1C_icon_res-flu",
+                        "module_description":  "Módulo de uma coluna para Ícone, Título, Texto e Botão",
+                        "supported_types":  [
+                                                "titulo",
+                                                "paragrafo",
+                                                "cta",
+                                                "topico"
+                                            ],
+                        "purpose":  "Apresentar uma informação-chave acompanhada de um chamado para ação, com suporte visual do ícone para reforçar contexto ou ação, funcionando como destaque intermediário em fluxos de e-mail para direcionar a atenção do leitor.",
+                        "usage_context":  [
+                                              "Após introdução para reforçar mensagem central",
+                                              "Antes do CTA final, destacando uma ação importante",
+                                              "No meio do e-mail para apresentar ofertas, updates ou chamadas para ação",
+                                              "Para anúncios de novidades, recursos, ou comunicações de onboarding",
+                                              "Cross-sell ou upgrade de serviço",
+                                              "Promoções-relâmpago em campanhas especiais"
+                                          ],
+                        "accepts":  {
+                                        "icon":  {
+                                                     "required":  true,
+                                                     "type":  "imagem",
+                                                     "size_limit":  "24x24px",
+                                                     "content_suport":  true
+                                                 },
+                                        "title":  {
+                                                      "required":  false,
+                                                      "type":  "texto curto",
+                                                      "char_limit":  60,
+                                                      "content_suport":  true
+                                                  },
+                                        "text":  {
+                                                     "required":  false,
+                                                     "type":  "texto parágrafo",
+                                                     "char_limit":  160,
+                                                     "content_suport":  true
+                                                 },
+                                        "button":  {
+                                                       "required":  false,
+                                                       "type":  "texto curto no botão + URL",
+                                                       "char_limit":  20,
+                                                       "content_suport":  true
+                                                   }
+                                    },
+                        "possible_structures":  [
+                                                    [
+                                                        "icon",
+                                                        "title",
+                                                        "text",
+                                                        "button"
+                                                    ],
+                                                    [
+                                                        "icon",
+                                                        "title",
+                                                        "text"
+                                                    ],
+                                                    [
+                                                        "icon",
+                                                        "title",
+                                                        "button"
+                                                    ],
+                                                    [
+                                                        "icon",
+                                                        "title"
+                                                    ],
+                                                    [
+                                                        "icon",
+                                                        "text",
+                                                        "button"
+                                                    ],
+                                                    [
+                                                        "icon",
+                                                        "text"
+                                                    ]
+                                                ],
+                        "visual_priority":  "alta",
+                        "strategic_recommendations":  [
+                                                          "Utilize para destacar propostas essenciais, novas funcionalidades, ou ações urgentes.",
+                                                          "Ideal para momentos de decisão (ex: upgrade de plano, inscrição em evento, aceitação de convite).",
+                                                          "Prefira mensagens objetivas, usando o ícone para reforçar contexto (ex: novidade, alerta, sucesso).",
+                                                          "Evite repetir muitos blocos desse tipo na sequência, pois pode diluir impacto."
+                                                      ],
+                        "variation_allowed":  [
+                                                  "Alterar alinhamento dos elementos (icon, title, text, button) a esquerda ou centralizado"
+                                              ],
+                        "examples":  [
+                                         {
+                                             "icon":  "icon-arrow-up.svg",
+                                             "title":  "Desbloqueie seu novo benefício!",
+                                             "text":  "Parabéns! Agora você pode acessar recursos exclusivos. Clique abaixo para ativar.",
+                                             "button":  "Ativar Agora"
+                                         }
+                                     ],
+                        "tags":  [
+                                     "destaque",
+                                     "CTA",
+                                     "onboarding",
+                                     "benefício",
+                                     "promoção",
+                                     "cross-sell",
+                                     "atualização",
+                                     "informação",
+                                     "ação"
+                                 ]
+                    },
+                    {
+                        "module_name":  "1C_img_res-flu",
+                        "module_description":  "Módulo de uma coluna para imagem",
+                        "supported_types":  [
+                                                "imagem"
+                                            ],
+                        "purpose":  "Atrair a atenção inicial, criar impacto visual imediato ou reforçar conceito/mensagem central através de uma imagem de grande destaque.",
+                        "usage_context":  [
+                                              "Topo do e-mail, logo após a introdução",
+                                              "Logo abaixo do cabeçalho para criar impacto inicial",
+                                              "Antes de uma seção explicativa, preparando contexto visual",
+                                              "Em campanhas de lançamento de produto para destaque visual",
+                                              "E-mails de branding, eventos ou promoções sazonais",
+                                              "Para campanhas com foco inspiracional/emocional"
+                                          ],
+                        "accepts":  {
+                                        "image":  {
+                                                      "required":  true,
+                                                      "description":  "Imagem principal do módulo.",
+                                                      "content_suport":  true
+                                                  }
+                                    },
+                        "possible_structures":  [
+                                                    [
+                                                        "image"
+                                                    ]
+                                                ],
+                        "visual_priority":  "máxima",
+                        "strategic_recommendations":  [
+                                                          "Use quando for necessário gerar forte impacto visual logo ao abrir o e-mail.",
+                                                          "Ideal para reforçar mensagens onde a imagem comunica mais que texto (branding, lifestyle, inspirações, emoção, lançamento visual de produto).",
+                                                          "Evite usar múltiplas vezes para não perder efeito de destaque e não tornar o e-mail pesado.",
+                                                          "Combine com módulos de texto/título logo abaixo para ampliar contexto, mas não sobrecarregue o módulo com informações.",
+                                                          "Prefira imagens de alta qualidade e relevância direta ao tema do e-mail; evite imagens genéricas.",
+                                                          "Permaneça atento à responsividade: utilize imagens otimizadas para desktop e mobile.",
+                                                          "Não utilize para conteúdos puramente informativos sem apelo visual.",
+                                                          "Não inclua call to action neste módulo; o foco deve ser o impacto visual."
+                                                      ],
+                        "variation_allowed":  [
+                                                  "Variação da imagem para campanhas diferentes (temáticas/eventos/produtos)",
+                                                  "Alteração de cor de fundo do bloco (para temas visuais específicos ou sazonalidade)",
+                                                  "Opção de bordas arredondadas ou retas",
+                                                  "Possibilidade de ajustar a altura da imagem (ex: recortes horizontais em vez de verticalizados)",
+                                                  "Permitir ausência de sombra no contorno"
+                                              ],
+                        "examples":  [
+                                         {
+                                             "image":  "https://cdn.suaempresa.com/email-marketing/lancamento-produto.png"
+                                         }
+                                     ],
+                        "tags":  [
+                                     "destaque",
+                                     "branding",
+                                     "visual-impact",
+                                     "topo",
+                                     "lançamento",
+                                     "eventos",
+                                     "inspiração",
+                                     "emocional"
+                                 ]
+                    },
+                    {
+                        "module_name":  "1C_line_res-flu",
+                        "module_description":  "Separador Horizontal",
+                        "supported_types":  [
+
+                                            ],
+                        "purpose":  "Separar ou agrupar visualmente diferentes seções do e-mail, ajudando a organizar o fluxo de leitura e delimitar blocos de conteúdo para facilitar a compreensão.",
+                        "usage_context":  [
+                                              "Entre seções de conteúdo distintos (ex: entre destaque e benefícios, entre produtos)",
+                                              "Antes de ações importantes (ex: antes de um bloco de CTA)",
+                                              "Após blocos densos de informação, para descanso visual",
+                                              "Para delimitar início ou fim de uma sessão temática",
+                                              "Entre ofertas de categorias diferentes"
+                                          ],
+                        "accepts":  {
+                                        "line":  {
+                                                     "required":  false,
+                                                     "content_suport":  false
+                                                 }
+                                    },
+                        "possible_structures":  [
+                                                    [
+                                                        "line"
+                                                    ]
+                                                ],
+                        "visual_priority":  "baixa",
+                        "strategic_recommendations":  [
+                                                          "Utilize para modular a leitura e melhorar a escaneabilidade entre blocos distintos.",
+                                                          "Evite sobrecarga: O excesso de divisores visualmente fragmenta demais o e-mail e pode confundir ou cansar.",
+                                                          "Reforce a hierarquia: Use preferencialmente entre blocos de importância ou temas diferentes, não entre itens de um mesmo grupo.",
+                                                          "Combine com cabeçalhos para separar seções — ex: divisor + título de nova sessão.",
+                                                          "Em campanhas longas, utilize para garantir ritmo visual e evitar que conteúdos se misturem.",
+                                                          "Não utilize como substituto para espaçamento natural entre elementos!",
+                                                          "Personalize a cor do divisor para reforçar branding sutilmente (quando apropriado).",
+                                                          "Em emails de onboarding, use divisores apenas onde há mudança real de assunto."
+                                                      ],
+                        "variation_allowed":  [
+                                                  "Cor da linha (seguindo identidade visual ou cinza neutro)",
+                                                  "Espessura (mínima recomendada 1px, máxima 4px para destaques pontuais — evitar uso sistemático de linhas grossas)",
+                                                  "Largura (total ou centralizada em menor proporção para gerar leveza)",
+                                                  "Estilo (apenas sólido, tracejado ou pontilhado para campanhas especiais/temáticas)",
+                                                  "Espaçamento (margens superiores/inferiores customizáveis)"
+                                              ],
+                        "examples":  [
+                                         {
+                                             "line":  true
+                                         }
+                                     ],
+                        "tags":  [
+                                     "divisor",
+                                     "modularidade",
+                                     "organização",
+                                     "fluidez visual",
+                                     "escaneabilidade",
+                                     "transição",
+                                     "estruturação"
+                                 ]
+                    },
+                    {
+                        "module_name":  "1C_name_res-flu",
+                        "module_description":  "Modulo de 1 coluna para Saudação com Nome e Texto",
+                        "supported_types":  [
+                                                "titulo",
+                                                "paragrafo"
+                                            ],
+                        "purpose":  "Estabelecer conexão inicial personalizada, saudando o destinatário pelo nome para criar proximidade e engajamento logo no início do e-mail.",
+                        "usage_context":  [
+                                              "Introdução de e-mails de boas-vindas",
+                                              "Primeiro bloco após um título principal"
+                                          ],
+                        "accepts":  {
+                                        "title":  {
+                                                      "required":  false,
+                                                      "type":  "texto curto",
+                                                      "char_limit":  60,
+                                                      "content_suport":  true
+                                                  },
+                                        "text":  {
+                                                     "required":  false,
+                                                     "type":  "texto parágrafo",
+                                                     "char_limit":  160,
+                                                     "content_suport":  true
+                                                 }
+                                    },
+                        "possible_structures":  [
+                                                    "first_name + texto"
+                                                ],
+                        "visual_priority":  "alta",
+                        "strategic_recommendations":  [
+                                                          "Use sempre no início para gerar identificação imediata e aumentar as taxas de leitura.",
+                                                          "Ideal em fluxos de onboarding, fidelização e campanhas em que o relacionamento é a prioridade.",
+                                                          "Evite o uso repetitivo em um mesmo e-mail; limite a personalização nominal ao primeiro bloco relevante."
+                                                      ],
+                        "variation_allowed":  [
+                                                  "Alterar alinhamento dos elementos (title e text) a esquerda ou centralizado"
+                                              ],
+                        "examples":  [
+                                         {
+                                             "title":  "Olá, %%=ProperCase([Primeiro_Nome])=%%.",
+                                             "text":  "Preparei novidades que combinam com você! Confira nossas ofertas exclusivas e seja o primeiro a aproveitar."
+                                         }
+                                     ],
+                        "tags":  [
+                                     "personalização",
+                                     "boas-vindas",
+                                     "relacionamento",
+                                     "saudação",
+                                     "onboarding",
+                                     "engajamento",
+                                     "humanização"
+                                 ]
+                    },
+                    {
+                        "module_name":  "1C_tit_res-flu",
+                        "module_description":  "Módulo de título para introduzir ou seccionar conteúdo",
+                        "supported_types":  [
+                                                "titulo",
+                                                "subtitulo"
+                                            ],
+                        "purpose":  "Introduzir ou seccionar conteúdo, orientar o leitor para o próximo bloco de informação, contextualizar rapidamente o tema subsequente do e-mail.",
+                        "usage_context":  [
+                                              "No início de uma nova seção do e-mail",
+                                              "Antes de conteúdos detalhados, listas ou módulos de destaque",
+                                              "Para separar tópicos em newsletters ou comunicados multiassunto",
+                                              "Em e-mails curtos com mensagens diretas"
+                                          ],
+                        "accepts":  {
+                                        "title":  {
+                                                      "obrigatório":  true,
+                                                      "limite_caracteres":  60
+                                                  }
+                                    },
+                        "possible_structures":  [
+                                                    [
+                                                        "title"
+                                                    ]
+                                                ],
+                        "visual_priority":  "alta",
+                        "strategic_recommendations":  [
+                                                          "Utilize para orientar rapidamente leitores escaneando o e-mail, facilitando a navegação por tópicos.",
+                                                          "Reforce a clareza do conteúdo agrupando matérias, produtos ou comunicações distintas sob títulos objetivos.",
+                                                          "Indique claramente transições de assunto: não use para mensagens promocionais isoladas ou calls to action (para esses, opte por módulos combinados).",
+                                                          "Evite a repetição excessiva desse módulo na mesma peça para não fragmentar o fluxo (máximo recomendado: 3 em e-mails longos).",
+                                                          "Seja sucinto e específico; títulos genéricos perdem impacto.",
+                                                          "Ideal para e-mails informativos, postagens de blog, releases, newsletters e conteúdos educacionais."
+                                                      ],
+                        "variation_allowed":  [
+                                                  "Alinhamento à esquerda ou centralizado"
+                                              ],
+                        "examples":  [
+                                         {
+                                             "title":  "Conheça nossas novidades!"
+                                         }
+                                     ],
+                        "tags":  [
+                                     "seção",
+                                     "informativo",
+                                     "onboarding",
+                                     "educacional",
+                                     "newsletter",
+                                     "divisor",
+                                     "curadoria"
+                                 ]
+                    },
+                    {
+                        "module_name":  "1C_txt_res-flu",
+                        "module_description":  "Modulo de uma coluna para texto",
+                        "supported_types":  [
+                                                "paragrafo",
+                                                "topico"
+                                            ],
+                        "purpose":  "Fornecer uma mensagem textual concisa para informar, contextualizar ou complementar outros módulos do e-mail, servindo como espaço neutro para conteúdo explicativo, instruções ou reforço de mensagem.",
+                        "usage_context":  [
+                                              "Após título ou hero image, para contextualização rápida",
+                                              "Antes de um CTA para reforço de mensagem",
+                                              "Durante corpo do e-mail para instruções, mensagens institucionais ou explicações",
+                                              "Em e-mails transacionais para detalhes de pedido ou atualizações",
+                                              "Em campanhas de onboarding para dar boas-vindas e instrução inicial"
+                                          ],
+                        "accepts":  {
+                                        "text":  {
+                                                     "required":  true,
+                                                     "character_limit":  280
+                                                 }
+                                    },
+                        "possible_structures":  [
+                                                    [
+                                                        "text"
+                                                    ]
+                                                ],
+                        "visual_priority":  "baixa",
+                        "strategic_recommendations":  [
+                                                          "Utilize para reforçar informações importantes que precisam ser lidas, mas não exigem destaque visual.",
+                                                          "Ideal para transmitir mensagens institucionais, avisos de segunda prioridade ou explicações detalhadas.",
+                                                          "Evite usar para CTAs ou informações cuja conversão depende de destaque; combine com títulos ou botões em outros módulos.",
+                                                          "Ótimo para cadências de onboarding, acompanhamento pós-compra e comunicações de suporte."
+                                                      ],
+                        "variation_allowed":  [
+                                                  "Alinhamento do texto (esquerda, centralizado, direita)",
+                                                  "Uso em bloco único ou como parte de um conjunto de paragráfos"
+                                              ],
+                        "examples":  [
+                                         {
+                                             "text":  "Parabéns! Seu pedido foi confirmado e está em preparo. Em breve enviaremos atualizações sobre a entrega."
+                                         }
+                                     ],
+                        "tags":  [
+                                     "texto",
+                                     "informativo",
+                                     "complementar",
+                                     "institucional",
+                                     "onboarding",
+                                     "explicativo",
+                                     "baixo destaque"
+                                 ]
+                    },
+                    {
+                        "module_name":  "2C_icon_res-flu",
+                        "module_description":  "Módulo de duas colunas para Ícone, Título, Texto e Botão",
+                        "supported_types":  [
+                                                "titulo",
+                                                "paragrafo",
+                                                "topico",
+                                                "cta"
+                                            ],
+                        "purpose":  "Apresentar de forma focada um destaque, benefício, orientação ou ação relevante, conduzindo o leitor a realizar uma ação estratégica (como saber mais, iniciar um fluxo ou acessar recurso).",
+                        "usage_context":  [
+                                              "Após introdução, para reforçar benefício ou funcionalidade",
+                                              "Antes de seções de produtos para destacar uma novidade ou chamada relevante",
+                                              "Para onboarding e guiar o usuário em passos iniciais",
+                                              "Em campanhas que dependem de ação única clara, como reativação ou cross-sell"
+                                          ],
+                        "accepts":  {
+                                        "icon":  {
+                                                     "required":  true,
+                                                     "type":  "imagem",
+                                                     "size_limit":  "24x24px",
+                                                     "content_suport":  true
+                                                 },
+                                        "title":  {
+                                                      "required":  false,
+                                                      "type":  "texto curto",
+                                                      "char_limit":  60,
+                                                      "content_suport":  true
+                                                  },
+                                        "text":  {
+                                                     "required":  false,
+                                                     "type":  "texto parágrafo",
+                                                     "char_limit":  160,
+                                                     "content_suport":  true
+                                                 },
+                                        "button":  {
+                                                       "required":  false,
+                                                       "type":  "texto curto no botão + URL",
+                                                       "char_limit":  20,
+                                                       "content_suport":  true
+                                                   }
+                                    },
+                        "possible_structures":  [
+                                                    [
+                                                        "icon",
+                                                        "title",
+                                                        "text",
+                                                        "button"
+                                                    ],
+                                                    [
+                                                        "icon",
+                                                        "title",
+                                                        "text"
+                                                    ],
+                                                    [
+                                                        "icon",
+                                                        "title",
+                                                        "button"
+                                                    ],
+                                                    [
+                                                        "icon",
+                                                        "title"
+                                                    ],
+                                                    [
+                                                        "icon",
+                                                        "text",
+                                                        "button"
+                                                    ],
+                                                    [
+                                                        "icon",
+                                                        "text"
+                                                    ]
+                                                ],
+                        "visual_priority":  "alta",
+                        "strategic_recommendations":  [
+                                                          "Use para chamar atenção a um aspecto que precisa de decisão ou ação rápida, como um novo recurso, oferta, lembrete de ação.",
+                                                          "Ideal para onboarding e fluxos educativos, pois combina clareza textual com chamada para ação.",
+                                                          "Funciona bem em sequência antes de listagens ou conteúdos de suporte, guiando o leitor na jornada."
+                                                      ],
+                        "variation_allowed":  [
+                                                  "Alterar alinhamento: ícone à direita (em situações de AB test ou repetição)"
+                                              ],
+                        "examples":  [
+                                         {
+                                             "icon":  "benefit_icon.svg",
+                                             "title":  "Descubra seu benefício exclusivo!",
+                                             "text":  "Aproveite condições especiais feitas para você. Saiba mais sobre as vantagens disponíveis na sua conta.",
+                                             "button":  "Ver benefícios"
+                                         },
+                                         {
+                                             "icon":  "onboarding_icon.svg",
+                                             "title":  "Bem-vindo ao nosso serviço!",
+                                             "text":  "Comece agora mesmo configurando seu perfil e explorando as funcionalidades que preparamos para você.",
+                                             "button":  false
+                                         },
+                                         {
+                                             "icon":  "alert_icon.svg",
+                                             "title":  "Atualize suas informações de segurança",
+                                             "text":  false,
+                                             "button":  false
+                                         }
+                                     ],
+                        "tags":  [
+                                     "destaque",
+                                     "chamada para ação",
+                                     "onboarding",
+                                     "benefício",
+                                     "lembrete",
+                                     "informação principal",
+                                     "orientação",
+                                     "cross-sell",
+                                     "lista de benefícios/passos/processos"
+                                 ]
+                    },
+                    {
+                        "module_name":  "2C_img-120px_res-flu",
+                        "module_description":  "Modulo de duas colunas com imagem lateral, título, texto e botão",
+                        "supported_types":  [
+                                                "imagem",
+                                                "titulo",
+                                                "paragrafo",
+                                                "cta"
+                                            ],
+                        "purpose":  "Apresentar um conteúdo destacado (produto, serviço, benefício) de forma visualmente atrativa, facilitando conexão rápida entre imagem, título, explicação e chamada para ação.",
+                        "usage_context":  [
+                                              "Após introdução/cabeçalho para destacar um item ou benefício principal",
+                                              "Em posição intermediária para apresentar vantagens específicas",
+                                              "Em campanhas de lançamento, promoção, cross-sell ou onboarding",
+                                              "Quando há necessidade de converter interesse rapidamente via botão"
+                                          ],
+                        "accepts":  {
+                                        "image":  {
+                                                      "required":  true,
+                                                      "type":  "imagem",
+                                                      "size_recommendation":  "120x120px",
+                                                      "content_suport":  true
+                                                  },
+                                        "title":  {
+                                                      "required":  false,
+                                                      "type":  "texto curto",
+                                                      "char_limit":  60,
+                                                      "content_suport":  true
+                                                  },
+                                        "text":  {
+                                                     "required":  false,
+                                                     "type":  "texto parágrafo",
+                                                     "char_limit":  160,
+                                                     "content_suport":  true
+                                                 },
+                                        "button":  {
+                                                       "required":  false,
+                                                       "type":  "texto curto no botão + URL",
+                                                       "char_limit":  20,
+                                                       "content_suport":  true
+                                                   }
+                                    },
+                        "possible_structures":  [
+                                                    [
+                                                        "image",
+                                                        "title",
+                                                        "text",
+                                                        "button"
+                                                    ],
+                                                    [
+                                                        "image",
+                                                        "title",
+                                                        "text"
+                                                    ],
+                                                    [
+                                                        "image",
+                                                        "title",
+                                                        "button"
+                                                    ],
+                                                    [
+                                                        "image",
+                                                        "title"
+                                                    ],
+                                                    [
+                                                        "image",
+                                                        "text",
+                                                        "button"
+                                                    ],
+                                                    [
+                                                        "image",
+                                                        "text"
+                                                    ]
+                                                ],
+                        "visual_priority":  "alta",
+                        "strategic_recommendations":  [
+                                                          "Use para destacar produtos, novos recursos ou benefícios de forma concisa.",
+                                                          "Ótimo para cross-sell e up-sell ao apresentar itens relacionados no contexto da navegação do cliente.",
+                                                          "Funciona bem em campanhas de onboarding quando há a necessidade de instruir e incentivar o primeiro clique.",
+                                                          "Evite repetir mais de duas vezes por e-mail — preservar a força do destaque.",
+                                                          "Combine com módulos de listas para uma experiência sequencial: use este módulo como destaques, seguido de blocos mais simples/descritivos.",
+                                                          "Ideal para estímulo de ação (botão bem visível) após um benefício ou oferta rápida."
+                                                      ],
+                        "variation_allowed":  [
+                                                  "Alterar alinhamento: imagem à direita (em situações de AB test ou repetição)"
+                                              ],
+                        "examples":  [
+                                         {
+                                             "title":  "Conheça nosso novo app!",
+                                             "text":  "Baixe agora para controlar suas finanças de onde estiver e tenha acesso a ofertas exclusivas.",
+                                             "button":  {
+                                                            "label":  "Experimente grátis",
+                                                            "url":  "https://meubanco.com/app"
+                                                        },
+                                             "image":  "https://meubanco.com/imagens/app-preview.png"
+                                         }
+                                     ],
+                        "tags":  [
+                                     "destaque",
+                                     "produto/serviços",
+                                     "cross-sell",
+                                     "lançamento",
+                                     "benefício",
+                                     "onboarding",
+                                     "chamada-para-acao",
+                                     "chamada-de-noticia"
+                                 ]
+                    },
+                    {
+                        "module_name":  "2C_img-196px_res-flu",
+                        "module_description":  "Modulo de duas colunas com imagem lateral, título, texto e botão",
+                        "supported_types":  [
+                                                "imagem",
+                                                "titulo",
+                                                "paragrafo",
+                                                "cta"
+                                            ],
+                        "purpose":  "Apresentar um conteúdo destacado (produto, serviço, benefício) de forma visualmente atrativa, facilitando conexão rápida entre imagem, título, explicação e chamada para ação.",
+                        "usage_context":  [
+                                              "Após introdução/cabeçalho para destacar um item ou benefício principal",
+                                              "Em posição intermediária para apresentar vantagens específicas",
+                                              "Em campanhas de lançamento, promoção, cross-sell ou onboarding",
+                                              "Quando há necessidade de converter interesse rapidamente via botão"
+                                          ],
+                        "accepts":  {
+                                        "image":  {
+                                                      "required":  true,
+                                                      "type":  "imagem",
+                                                      "size_recommendation":  "196x196px",
+                                                      "content_suport":  true
+                                                  },
+                                        "title":  {
+                                                      "required":  false,
+                                                      "type":  "texto curto",
+                                                      "char_limit":  60,
+                                                      "content_suport":  true
+                                                  },
+                                        "text":  {
+                                                     "required":  false,
+                                                     "type":  "texto parágrafo",
+                                                     "char_limit":  160,
+                                                     "content_suport":  true
+                                                 },
+                                        "button":  {
+                                                       "required":  false,
+                                                       "type":  "texto curto no botão + URL",
+                                                       "char_limit":  20,
+                                                       "content_suport":  true
+                                                   }
+                                    },
+                        "possible_structures":  [
+                                                    [
+                                                        "image",
+                                                        "title",
+                                                        "text",
+                                                        "button"
+                                                    ],
+                                                    [
+                                                        "image",
+                                                        "title",
+                                                        "text"
+                                                    ],
+                                                    [
+                                                        "image",
+                                                        "title",
+                                                        "button"
+                                                    ],
+                                                    [
+                                                        "image",
+                                                        "title"
+                                                    ],
+                                                    [
+                                                        "image",
+                                                        "text",
+                                                        "button"
+                                                    ],
+                                                    [
+                                                        "image",
+                                                        "text"
+                                                    ]
+                                                ],
+                        "visual_priority":  "alta",
+                        "strategic_recommendations":  [
+                                                          "Use para destacar produtos, novos recursos ou benefícios de forma concisa.",
+                                                          "Ótimo para cross-sell e up-sell ao apresentar itens relacionados no contexto da navegação do cliente.",
+                                                          "Funciona bem em campanhas de onboarding quando há a necessidade de instruir e incentivar o primeiro clique.",
+                                                          "Evite repetir mais de duas vezes por e-mail — preservar a força do destaque.",
+                                                          "Combine com módulos de listas para uma experiência sequencial: use este módulo como destaques, seguido de blocos mais simples/descritivos.",
+                                                          "Ideal para estímulo de ação (botão bem visível) após um benefício ou oferta rápida."
+                                                      ],
+                        "variation_allowed":  [
+                                                  "Alterar alinhamento: imagem à direita (em situações de AB test ou repetição)"
+                                              ],
+                        "examples":  [
+                                         {
+                                             "title":  "Conheça nosso novo app!",
+                                             "text":  "Baixe agora para controlar suas finanças de onde estiver e tenha acesso a ofertas exclusivas.",
+                                             "button":  {
+                                                            "label":  "Experimente grátis",
+                                                            "url":  "https://meubanco.com/app"
+                                                        },
+                                             "image":  "https://meubanco.com/imagens/app-preview.png"
+                                         }
+                                     ],
+                        "tags":  [
+                                     "destaque",
+                                     "produto/serviços",
+                                     "cross-sell",
+                                     "lançamento",
+                                     "benefício",
+                                     "onboarding",
+                                     "chamada-para-acao",
+                                     "chamada-de-noticia"
+                                 ]
+                    },
+                    {
+                        "module_name":  "2C_img-228px_res-flu",
+                        "module_description":  "Modulo de duas colunas com imagem lateral, título, texto e botão",
+                        "supported_types":  [
+                                                "imagem",
+                                                "titulo",
+                                                "paragrafo",
+                                                "cta"
+                                            ],
+                        "purpose":  "Apresentar um conteúdo destacado (produto, serviço, benefício) de forma visualmente atrativa, facilitando conexão rápida entre imagem, título, explicação e chamada para ação.",
+                        "usage_context":  [
+                                              "Após introdução/cabeçalho para destacar um item ou benefício principal",
+                                              "Em posição intermediária para apresentar vantagens específicas",
+                                              "Em campanhas de lançamento, promoção, cross-sell ou onboarding",
+                                              "Quando há necessidade de converter interesse rapidamente via botão"
+                                          ],
+                        "accepts":  {
+                                        "image":  {
+                                                      "required":  true,
+                                                      "type":  "imagem",
+                                                      "size_recommendation":  "228x228px",
+                                                      "content_suport":  true
+                                                  },
+                                        "title":  {
+                                                      "required":  false,
+                                                      "type":  "texto curto",
+                                                      "char_limit":  60,
+                                                      "content_suport":  true
+                                                  },
+                                        "text":  {
+                                                     "required":  false,
+                                                     "type":  "texto parágrafo",
+                                                     "char_limit":  160,
+                                                     "content_suport":  true
+                                                 },
+                                        "button":  {
+                                                       "required":  false,
+                                                       "type":  "texto curto no botão + URL",
+                                                       "char_limit":  20,
+                                                       "content_suport":  true
+                                                   }
+                                    },
+                        "possible_structures":  [
+                                                    [
+                                                        "image",
+                                                        "title",
+                                                        "text",
+                                                        "button"
+                                                    ],
+                                                    [
+                                                        "image",
+                                                        "title",
+                                                        "text"
+                                                    ],
+                                                    [
+                                                        "image",
+                                                        "title",
+                                                        "button"
+                                                    ],
+                                                    [
+                                                        "image",
+                                                        "title"
+                                                    ],
+                                                    [
+                                                        "image",
+                                                        "text",
+                                                        "button"
+                                                    ],
+                                                    [
+                                                        "image",
+                                                        "text"
+                                                    ]
+                                                ],
+                        "visual_priority":  "alta",
+                        "strategic_recommendations":  [
+                                                          "Use para destacar produtos, novos recursos ou benefícios de forma concisa.",
+                                                          "Ótimo para cross-sell e up-sell ao apresentar itens relacionados no contexto da navegação do cliente.",
+                                                          "Funciona bem em campanhas de onboarding quando há a necessidade de instruir e incentivar o primeiro clique.",
+                                                          "Evite repetir mais de duas vezes por e-mail — preservar a força do destaque.",
+                                                          "Combine com módulos de listas para uma experiência sequencial: use este módulo como destaques, seguido de blocos mais simples/descritivos.",
+                                                          "Ideal para estímulo de ação (botão bem visível) após um benefício ou oferta rápida."
+                                                      ],
+                        "variation_allowed":  [
+                                                  "Alterar alinhamento: imagem à direita (em situações de AB test ou repetição)"
+                                              ],
+                        "examples":  [
+                                         {
+                                             "title":  "Conheça nosso novo app!",
+                                             "text":  "Baixe agora para controlar suas finanças de onde estiver e tenha acesso a ofertas exclusivas.",
+                                             "button":  {
+                                                            "label":  "Experimente grátis",
+                                                            "url":  "https://meubanco.com/app"
+                                                        },
+                                             "image":  "https://meubanco.com/imagens/app-preview.png"
+                                         }
+                                     ],
+                        "tags":  [
+                                     "destaque",
+                                     "produto/serviços",
+                                     "cross-sell",
+                                     "lançamento",
+                                     "benefício",
+                                     "onboarding",
+                                     "chamada-para-acao",
+                                     "chamada-de-noticia"
+                                 ]
+                    },
+                    {
+                        "module_name":  "2C_tit-btn_res-flu",
+                        "module_description":  "Módulo de Pergunta Binária com CTA",
+                        "supported_types":  [
+                                                "titulo",
+                                                "cta"
+                                            ],
+                        "purpose":  "Obter uma resposta direta do usuário sobre uma ação específica (sim/não), facilitando a captura de interesse e encaminhamento para jornadas personalizadas, como confirmação de presença, opt-in de campanhas ou pesquisas rápidas.",
+                        "usage_context":  [
+                                              "No topo de e-mails para chamada de ação imediata",
+                                              "Após apresentação do evento/oferta para captar interesse",
+                                              "Antes do CTA final para reforçar engajamento",
+                                              "Em fluxos de onboarding (para configuração de preferências)",
+                                              "Para segmentação comportamental baseada na resposta",
+                                              "Em campanhas de RSVP ou confirmação de interesse"
+                                          ],
+                        "accepts":  {
+                                        "title":  {
+                                                      "required":  false,
+                                                      "type":  "texto curto",
+                                                      "char_limit":  60,
+                                                      "content_suport":  true
+                                                  },
+                                        "button_yes":  {
+                                                           "required":  false,
+                                                           "type":  "texto curto no botão + URL",
+                                                           "char_limit":  20,
+                                                           "content_suport":  true
+                                                       },
+                                        "button_no":  {
+                                                          "required":  false,
+                                                          "type":  "texto curto no botão + URL",
+                                                          "char_limit":  20,
+                                                          "content_suport":  true
+                                                      }
+                                    },
+                        "possible_structures":  [
+                                                    [
+                                                        "title",
+                                                        "button_yes",
+                                                        "button_no"
+                                                    ]
+                                                ],
+                        "visual_priority":  "máxima",
+                        "strategic_recommendations":  [
+                                                          "Utilize para decisões rápidas e objetivas, quando o objetivo é encaminhar o leitor para um fluxo personalizado com base na resposta.",
+                                                          "Ideal após apresentar informações-chave ou benefícios sobre a ação proposta (ex: participação em um evento, aceite de oferta, cadastro em novidades).",
+                                                          "Evite usar em sequência ou repetidamente no mesmo e-mail para não gerar fadiga."
+                                                      ],
+                        "variation_allowed":  [
+                                                  "Alterar rótulos dos botões (ex: \u0027Quero\u0027, \u0027Não quero\u0027) conforme contexto"
+                                              ],
+                        "examples":  [
+                                         {
+                                             "title":  "Gostaria de participar deste evento?",
+                                             "button_yes":  "Sim",
+                                             "button_no":  "Não"
+                                         },
+                                         {
+                                             "title":  "Deseja receber novidades exclusivas?",
+                                             "button_yes":  "Quero receber",
+                                             "button_no":  "Não, obrigado"
+                                         }
+                                     ],
+                        "tags":  [
+                                     "engajamento",
+                                     "decisão",
+                                     "RSVP",
+                                     "pesquisa rápida",
+                                     "confirmação",
+                                     "segmentação",
+                                     "evento"
+                                 ]
+                    },
+                    {
+                        "module_name":  "header_img-228px_res-flu",
+                        "module_description":  "Modulo de 2 colunas para header com imagem (lateral) titulo, texto e botão",
+                        "supported_types":  [
+                                                "imagem",
+                                                "titulo",
+                                                "paragrafo",
+                                                "cta"
+                                            ],
+                        "purpose":  "Apresentar um conteúdo principal de destaque aliado à imagem ilustrativa e chamado para ação rápido, facilitando a compreensão e o clique do usuário.",
+                        "usage_context":  [
+                                              "topo",
+                                              "header principal",
+                                              "primeira seção",
+                                              "Topo logo após abertura para destacar uma oferta/principal mensagem",
+                                              "Após introdução para promover produto/serviço-chave",
+                                              "Em campanhas promocionais e de lançamento",
+                                              "No início do corpo do e-mail para comunicação de benefício central",
+                                              "Em e-mails de onboarding para destacar primeiro passo ou ação desejada",
+                                              "Para campanhas de cross-sell ou up-sell destacando produtos complementares"
+                                          ],
+                        "accepts":  {
+                                        "image":  {
+                                                      "required":  true,
+                                                      "type":  "imagem",
+                                                      "size_recommendation":  "228x228px",
+                                                      "content_suport":  true
+                                                  },
+                                        "title":  {
+                                                      "required":  false,
+                                                      "type":  "texto curto",
+                                                      "char_limit":  60,
+                                                      "content_suport":  true
+                                                  },
+                                        "text":  {
+                                                     "required":  false,
+                                                     "type":  "texto parágrafo",
+                                                     "char_limit":  160,
+                                                     "content_suport":  true
+                                                 },
+                                        "button":  {
+                                                       "required":  false,
+                                                       "type":  "texto curto no botão + URL",
+                                                       "char_limit":  20,
+                                                       "content_suport":  true
+                                                   }
+                                    },
+                        "possible_structures":  [
+                                                    [
+                                                        "image",
+                                                        "title",
+                                                        "text",
+                                                        "button"
+                                                    ],
+                                                    [
+                                                        "image",
+                                                        "title",
+                                                        "text"
+                                                    ],
+                                                    [
+                                                        "image",
+                                                        "title",
+                                                        "button"
+                                                    ],
+                                                    [
+                                                        "image",
+                                                        "title"
+                                                    ],
+                                                    [
+                                                        "image",
+                                                        "text",
+                                                        "button"
+                                                    ],
+                                                    [
+                                                        "image",
+                                                        "text"
+                                                    ]
+                                                ],
+                        "visual_priority":  "alta",
+                        "strategic_recommendations":  [
+                                                          "Prefira como primeiro bloco de destaque.",
+                                                          "Use para destacar o benefício/principal ação desejada num momento em que o usuário ainda está engajado",
+                                                          "Ideal para ofertas, novos lançamentos ou divulgação de benefícios-chave",
+                                                          "Ao agrupar imagem e texto lado a lado, prefira imagens de fácil interpretação e textos objetivos",
+                                                          "Não repetir este módulo na mesma comunicação para preservar o impacto visual"
+                                                      ],
+                        "variation_allowed":  [
+                                                  "Alternar a posição da imagem (esquerda/direita conforme diagrama geral)",
+                                                  "Ocultar o botão quando ação não for o foco (ex: apenas informativo)",
+                                                  "Permitir ausência do texto quando o título já resumir o benefício"
+                                              ],
+                        "examples":  [
+                                         {
+                                             "image":  "https://www.exemplo.com/imagem-novarecurso.png",
+                                             "title":  "Novo recurso exclusivo para você!",
+                                             "text":  "Descubra como simplificar seu dia com nossa nova ferramenta. Disponível agora mesmo para clientes ativos.",
+                                             "button":  "Experimentar agora"
+                                         },
+                                         {
+                                             "image":  "https://www.exemplo.com/imagem-novarecurso.png",
+                                             "title":  "Novo recurso exclusivo para você!",
+                                             "text":  "Descubra como simplificar seu dia com nossa nova ferramenta. Disponível agora mesmo para clientes ativos."
+                                         },
+                                         {
+                                             "image":  "https://www.exemplo.com/imagem-novarecurso.png",
+                                             "title":  "Novo recurso exclusivo para você!"
+                                         },
+                                         {
+                                             "image":  "https://www.exemplo.com/imagem-novarecurso.png",
+                                             "text":  "Descubra como simplificar seu dia com nossa nova ferramenta. Disponível agora mesmo para clientes ativos."
+                                         },
+                                         {
+                                             "image":  "https://www.exemplo.com/imagem-novarecurso.png",
+                                             "text":  "Descubra como simplificar seu dia com nossa nova ferramenta. Disponível agora mesmo para clientes ativos.",
+                                             "button":  "Experimentar agora"
+                                         },
+                                         {
+                                             "image":  "https://www.exemplo.com/imagem-novarecurso.png",
+                                             "title":  "Descubra como simplificar seu dia com nossa nova ferramenta. Disponível agora mesmo para clientes ativos.",
+                                             "button":  "Experimentar agora"
+                                         }
+                                     ],
+                        "tags":  [
+                                     "destaque",
+                                     "oferta principal",
+                                     "produto",
+                                     "onboarding",
+                                     "cross-sell",
+                                     "lançamento",
+                                     "CTA"
+                                 ]
+                    },
+                    {
+                        "module_name":  "header_res-flu",
+                        "module_description":  "Módulo de uma coluna para Header com Título, Texto e Botão",
+                        "supported_types":  [
+                                                "titulo",
+                                                "paragrafo",
+                                                "cta"
+                                            ],
+                        "purpose":  "Capturar a atenção do leitor com uma mensagem forte e um botão de call-to-action no topo do e-mail.",
+                        "usage_context":  [
+                                              "topo",
+                                              "header principal",
+                                              "primeira seção",
+                                              "Topo logo após abertura para destacar uma oferta/principal mensagem",
+                                              "Após introdução para promover produto/serviço-chave",
+                                              "Em campanhas promocionais e de lançamento",
+                                              "No início do corpo do e-mail para comunicação de benefício central",
+                                              "Em e-mails de onboarding para destacar primeiro passo ou ação desejada",
+                                              "Para campanhas de cross-sell ou up-sell destacando produtos complementares",
+                                              "Para e-mails transacionais com o status da transação em destaque"
+                                          ],
+                        "accepts":  {
+                                        "title":  {
+                                                      "required":  false,
+                                                      "max_length":  80
+                                                  },
+                                        "text":  {
+                                                     "required":  false,
+                                                     "max_length":  150
+                                                 },
+                                        "button":  {
+                                                       "required":  false,
+                                                       "max_length":  20
+                                                   }
+                                    },
+                        "possible_structures":  [
+                                                    [
+                                                        "title",
+                                                        "text",
+                                                        "button"
+                                                    ],
+                                                    [
+                                                        "title",
+                                                        "text"
+                                                    ],
+                                                    [
+                                                        "title",
+                                                        "button"
+                                                    ],
+                                                    [
+                                                        "title"
+                                                    ],
+                                                    [
+                                                        "text",
+                                                        "button"
+                                                    ],
+                                                    [
+                                                        "text"
+                                                    ]
+                                                ],
+                        "visual_priority":  "máxima",
+                        "strategic_recommendations":  [
+                                                          "Ideal para introduzir ofertas principais ou mensagens chave.",
+                                                          "Aproveitar para mensagens que precisam de alta visibilidade.",
+                                                          "Posicionar como a primeira interação para direcionar o leitor ao objetivo principal.",
+                                                          "Não repetir em diferentes seções do e-mail.",
+                                                          "Melhor opção para Header em e-mails transacionais."
+                                                      ],
+                        "variation_allowed":  [
+                                                  "Alterar alinhamento dos elementos: centralizado ou esquerda"
+                                              ],
+                        "examples":  [
+                                         {
+                                             "title":  "Descubra Nossas Ofertas",
+                                             "text":  "Explore descontos exclusivos para você hoje.",
+                                             "button":  "Veja agora"
+                                         }
+                                     ],
+                        "tags":  [
+                                     "cabeçalho",
+                                     "CTA",
+                                     "oferta principal"
+                                 ]
+                    }
+                ],
+    "total_count":  13
+}

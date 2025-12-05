@@ -1,0 +1,194 @@
+{
+  "email_layout": {
+    "total_modules": 10,
+    "layout_strategy": "Agrupamento otimizado por seções, priorizando uso de módulos com múltiplos campos. Saudação e contexto inicial integrados em um bloco otimizado. Tópicos de benefício com destaque visual individual. CTAs sempre em módulos permitidos e NUNCA como [icon, button] sem título ou texto (regra crítica). Passo a passo visual com módulo de imagem dedicado. Reforço de regras e condições ao final para clareza.",
+    "modules": [
+      {
+        "module_position": 1,
+        "module_name": "header_res-flu",
+        "module_purpose": "Header informativo e promocional",
+        "content_mapping": {
+          "title": "Quer parcelar seus boletos e pagar só daqui a 2 meses?",
+          "text": "No app Itaú, você pode!"
+        },
+        "source_sections": [],
+        "content_elements_used": [
+          "header"
+        ]
+      },
+      {
+        "module_position": 2,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Saudação personalizada, benefício de início de pagamento flexível e CTA inicial",
+        "content_mapping": {
+          "icon": "payment_terminal_card_base",
+          "title": "Olá, %%=ProperCase([Primeiro_Nome])=%%!",
+          "text": "Além de pagar seus boletos em até 12x no cartão de crédito, agora você também pode escolher quando começar a pagar, seja na fatura atual, na próxima ou: Comece a pagar só daqui a 2 meses",
+          "button": "Parcelar boleto"
+        },
+        "source_sections": [
+          1
+        ],
+        "content_elements_used": [
+          "titulo",
+          "paragrafo",
+          "topico",
+          "cta"
+        ]
+      },
+      {
+        "module_position": 3,
+        "module_name": "1C_tit_res-flu",
+        "module_purpose": "Subtítulo de benefícios práticos do serviço",
+        "content_mapping": {
+          "title": "Uma forma prática e 100% digital pra você:"
+        },
+        "source_sections": [
+          2
+        ],
+        "content_elements_used": [
+          "subtitulo"
+        ]
+      },
+      {
+        "module_position": 4,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Destaque - Centralizar seus gastos",
+        "content_mapping": {
+          "icon": "money_base",
+          "title": "Centralizar seus gastos",
+          "text": "Organize os boletos no cartão de crédito e facilite seu dia a dia financeiro."
+        },
+        "source_sections": [
+          2
+        ],
+        "content_elements_used": [
+          "topico"
+        ]
+      },
+      {
+        "module_position": 5,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Destaque - Pague do seu jeito",
+        "content_mapping": {
+          "icon": "credit_custom_base",
+          "title": "Pague do seu jeito",
+          "text": "Parcele em até 12x e defina se a primeira parcela virá na fatura aberta ou em até duas pra frente."
+        },
+        "source_sections": [
+          2
+        ],
+        "content_elements_used": [
+          "topico"
+        ]
+      },
+      {
+        "module_position": 6,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Destaque - Mantenha seu controle",
+        "content_mapping": {
+          "icon": "configuration_base",
+          "title": "Mantenha seu controle",
+          "text": "Escolha a quantidade de parcelas e quando começar a pagar. É simples, direto no app."
+        },
+        "source_sections": [
+          2
+        ],
+        "content_elements_used": [
+          "topico"
+        ]
+      },
+      {
+        "module_position": 7,
+        "module_name": "1C_tit_res-flu",
+        "module_purpose": "Chamada para passo a passo visual",
+        "content_mapping": {
+          "title": "Confira o passo a passo para parcelar o seu boleto no app Itaú:"
+        },
+        "source_sections": [
+          3
+        ],
+        "content_elements_used": [
+          "subtitulo"
+        ]
+      },
+      {
+        "module_position": 8,
+        "module_name": "1C_img_res-flu",
+        "module_purpose": "Demonstração em imagem/gif do processo no app",
+        "content_mapping": {
+          "image": "passo a passo parcelar boleto (gif)"
+        },
+        "source_sections": [
+          3
+        ],
+        "content_elements_used": [
+          "imagem"
+        ]
+      },
+      {
+        "module_position": 9,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Refôrço final e CTA para ação",
+        "content_mapping": {
+          "icon": "credit_base",
+          "text": "Agora é só escolher quando começar a pagar!",
+          "button": "Parcelar boleto"
+        },
+        "source_sections": [
+          4
+        ],
+        "content_elements_used": [
+          "paragrafo",
+          "cta"
+        ]
+      },
+      {
+        "module_position": 10,
+        "module_name": "1C_txt_res-flu",
+        "module_purpose": "Aviso de condições e compliance",
+        "content_mapping": {
+          "text": "Sujeito a análise de crédito. Consulte condições no app."
+        },
+        "source_sections": [
+          5
+        ],
+        "content_elements_used": [
+          "paragrafo"
+        ]
+      }
+    ]
+  },
+  "layout_analysis": {
+    "content_distribution": "Header impactante seguido de bloco integrado de saudação, benefício principal e CTA. Subtítulo separa benefícios práticos, que são entregues um a um em módulos visuais independentes, garantindo máxima escaneabilidade. Instrução ilustrada vem depois. Finalização reforça benefício e CTA, com aviso legal ao final.",
+    "visual_hierarchy": "Header inicia com promessa forte. Módulo inicial une saudação e chamada forte para parcelamento. Benefícios quebrados em blocos próprios, cada um com título e texto, criando barras visuais claras. Imagem/gif cria respiro visual. CTA posicionado no início e próximo ao fechamento, incentivando ação repetida. Aviso de compliance fecha garantindo clareza e segurança.",
+    "strategic_notes": "Aproveitamento total dos possíveis campos; nunca houve agrupamento de tópicos em bullets. CTAs sempre acompanhados de contextos textuais em 'icon, text, button' nos módulos permitidos. Obedecidas restrições dos possible_structures, sem campos inventados. Hierarquia visual e modularização priorizadas para escaneabilidade e engajamento."
+  },
+  "icon_selections": {
+    "replacements_made": 5,
+    "validation_status": "APPROVED",
+    "search_keywords_used": [
+      "cartão",
+      "boleto",
+      "parcela",
+      "pagamento",
+      "centralizar",
+      "controle",
+      "crédito"
+    ],
+    "rejected_icons": [
+      "icone-saudacao-boleto",
+      "icone-centralizar-gastos",
+      "icone-pague-do-seu-jeito",
+      "icone-mantenha-seu-controle",
+      "icone-finalizacao-boleto"
+    ],
+    "approved_icons": [
+      "payment_terminal_card_base",
+      "money_base",
+      "credit_custom_base",
+      "configuration_base",
+      "credit_base"
+    ]
+  }
+}

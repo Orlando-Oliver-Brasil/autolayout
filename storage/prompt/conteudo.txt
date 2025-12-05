@@ -1,0 +1,84 @@
+# Somos uma agência especilizada em comunicação dirigida, nossa atuação principal está em criar e-mails marketings.
+Neste projeto iremos conectar assisttentes de IA ao processo de criação de layouts de e-mail do tipo wireframe.
+O fluxo de trabalho se inicia quando o DA (Diretor de Arte) inputa uma lauda de e-mail.
+## Com base na lauda devemos:
+1- Receber o conteúdo de uma lauda e identificar;
+1.1 - Marca; (Atraves da marcação [Marca])
+1.2 - Produto ou Serviço; (Atraves da marcação [Produto/Serviço:])
+1.3 - Conteúdo do e-mail;
+  1.3.1 - Tudo que não for marcado como [Marca] ou [Produto/Serviço] deve ser considerado conteúdo do e-mail.
+  1.3.2 - O conteúdo do e-mail é dividido em seções e subseções.
+    1.3.3 - A primeira seção do e-mail é composta pelo header e deve conter a marcação [Header].
+    1.3.4 - Após a seção header, o restante do conteúdo do e-mail deve ser dividido em seções e subseções conforme a estrutura do conteúdo.
+2- Com base nas informações extraídas da lauda, gerar um json com todo o conteúdo separado pelas marcações.
+
+### Marcações:
+Normalmente as marcações são colocadas no início de uma nova linha, seguidas por uma quebra de linha.
+As marcações são:
+- [Marca]
+- [Produto/Serviço]
+- [Header]
+
+## Exemplo de lauda de e-mail:
+```text
+[Marca]
+Itaú Massificado
+
+[Produto/Serviço]
+Limite Garantido - Cofrinhos
+
+[Header]
+Seu limite do cartão de crédito aumentou! Aproveite as vantagens.
+
+
+Olá, %%=ProperCase([Primeiro_Nome])=%%.  
+Seu dinheiro aplicado no Cofrinhos já está sendo usado como garantia para aumentar o limite do seu cartão de crédito Itaú Personnalité. Com isso, você tem mais flexibilidade para fazer seus pagamentos e pode realizar as suas compras com mais liberdade.  
+E o melhor? Quanto mais você aplica, mais limite você libera.  
+Confira como é fácil: 
+    Para cada R$ 1,00 reservado, você tem R$ 1,00 de aumento de limite 
+    Seu novo limite é liberado na hora, sem complicação  
+    Tudo direto pelo app Itaú Personnalité, sem análise de crédito  
+Limite Garantido automático e com vantagens exclusivas. 
+Descubra os benefícios de usar seu dinheiro no Cofrinhos para aumentar seu limite 
+Parcele compras à vista no cartão de crédito 
+Ganhe descontos na antecipação de parcelas do cartão  
+Centralize seus gastos em uma só fatura, com uma data de vencimento 
+Aproveite todas as vantagens exclusivas do seu cartão 
+Atenção: o dinheiro aplicado no Cofrinhos é apenas uma garantia para seu aumento de limite e não será usado no pagamento da sua fatura. Para ter um limite ainda maior, continue aplicando seu dinheiro pelo app Itaú Personnalité.  
+Acesse em: Produtos > Cartões > Limite do Cartão > Limite Garantido.  
+```
+
+### Exemplo de JSON gerado a partir da lauda:
+```json
+  {
+    "marca": "Itaú Massificado",
+    "produto_servico": "Limite Garantido - Cofrinhos",
+    "header": "Seu limite do cartão de crédito aumentou! Aproveite as vantagens.",
+    "conteudo_email": "Olá, %%=ProperCase([Primeiro_Nome])\nOlá, %%=ProperCase([Primeiro_Nome])=%%.  
+Seu dinheiro aplicado no Cofrinhos já está sendo usado como garantia para aumentar o limite do seu cartão de crédito Itaú Personnalité. Com isso, você tem mais flexibilidade para fazer seus pagamentos e pode realizar as suas compras com mais liberdade.  
+E o melhor? Quanto mais você aplica, mais limite você libera.  
+Confira como é fácil: 
+    Para cada R$ 1,00 reservado, você tem R$ 1,00 de aumento de limite 
+    Seu novo limite é liberado na hora, sem complicação  
+    Tudo direto pelo app Itaú Personnalité, sem análise de crédito  
+Limite Garantido automático e com vantagens exclusivas. 
+Descubra os benefícios de usar seu dinheiro no Cofrinhos para aumentar seu limite 
+Parcele compras à vista no cartão de crédito 
+Ganhe descontos na antecipação de parcelas do cartão  
+Centralize seus gastos em uma só fatura, com uma data de vencimento 
+Aproveite todas as vantagens exclusivas do seu cartão 
+Atenção: o dinheiro aplicado no Cofrinhos é apenas uma garantia para seu aumento de limite e não será usado no pagamento da sua fatura. Para ter um limite ainda maior, continue aplicando seu dinheiro pelo app Itaú Personnalité.  
+Acesse em: Produtos > Cartões > Limite do Cartão > Limite Garantido."
+  }
+```
+
+### Instruções:
+- Com base na lauda de e-mail fornecida, extraia as informações conforme as marcações indicadas e gere um JSON estruturado com os campos "marca", "produto_servico", "header" e "conteudo_email". Certifique-se de que todo o conteúdo do e-mail esteja corretamente capturado no campo "conteudo_email", excluindo as marcações.
+- Seu output deve ser apenas o JSON gerado.
+- Caso não encontre alguma das marcações você deverá responder com uma mensagem de erro em forma de json, indicando qual marcação está faltando.
+### Exemplo de JSON de erro:
+```json
+{
+  "error": "Marcação [Marca] está faltando."
+}
+```

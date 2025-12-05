@@ -1,0 +1,77 @@
+{
+  "module_name": "1C_icon_res-flu",
+  "module_description": "Módulo de uma coluna para Ícone, Título, Texto e Botão",
+  "supported_types": ["titulo", "paragrafo", "cta", "topico"],
+  "purpose": "Apresentar uma informação-chave acompanhada de um chamado para ação, com suporte visual do ícone para reforçar contexto ou ação, funcionando como destaque intermediário em fluxos de e-mail para direcionar a atenção do leitor.",
+  "usage_context": [
+    "Após introdução para reforçar mensagem central",
+    "Antes do CTA final, destacando uma ação importante",
+    "No meio do e-mail para apresentar ofertas, updates ou chamadas para ação",
+    "Para anúncios de novidades, recursos, ou comunicações de onboarding",
+    "Cross-sell ou upgrade de serviço",
+    "Promoções-relâmpago em campanhas especiais"
+  ],
+  "accepts": {
+    "icon": {
+      "required": true,
+      "type": "imagem",
+      "size_limit": "24x24px",
+      "content_suport": true
+    },
+    "title": {
+      "required": false,
+      "type": "texto curto",
+      "char_limit": 60,
+      "content_suport": true
+    },
+    "text": {
+      "required": false,
+      "type": "texto parágrafo",
+      "char_limit": 160,
+      "content_suport": true
+    },
+    "button": {
+      "required": false,
+      "type": "texto curto no botão + URL",
+      "char_limit": 20,
+      "content_suport": true
+    }
+  },
+  "possible_structures": [
+    ["icon", "title", "text", "button"],
+    ["icon", "title", "text"],
+    ["icon", "title", "button"],
+    ["icon", "title"],
+    ["icon", "text", "button"],
+    ["icon", "text"]
+  ],
+  "visual_priority": "alta",
+  "strategic_recommendations": [
+    "Utilize para destacar propostas essenciais, novas funcionalidades, ou ações urgentes.",
+    "Ideal para momentos de decisão (ex: upgrade de plano, inscrição em evento, aceitação de convite).",
+    "Prefira mensagens objetivas, usando o ícone para reforçar contexto (ex: novidade, alerta, sucesso).",
+    "Evite repetir muitos blocos desse tipo na sequência, pois pode diluir impacto."
+  ],
+  "variation_allowed": [
+    "Alterar alinhamento dos elementos (icon, title, text, button) a esquerda ou centralizado"
+  ],
+  "examples": [
+    {
+      "icon": "icon-arrow-up.svg",
+      "title": "Desbloqueie seu novo benefício!",
+      "text": "Parabéns! Agora você pode acessar recursos exclusivos. Clique abaixo para ativar.",
+      "button": "Ativar Agora"
+    }
+  ],
+  "tags": [
+    "destaque",
+    "CTA",
+    "onboarding",
+    "benefício",
+    "promoção",
+    "cross-sell",
+    "atualização",
+    "informação",
+    "ação"
+  ]
+}

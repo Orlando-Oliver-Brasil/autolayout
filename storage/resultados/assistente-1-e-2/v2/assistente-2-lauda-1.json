@@ -1,0 +1,124 @@
+{
+  "email_layout": {
+    "total_modules": 8,
+    "layout_strategy": "Estrutura sequencial com destaque inicial para saudação personalizada, explicação, lista de benefícios e finalização com instrução clara. Títulos isolados são apresentados em módulos próprios, tópicos destacados em 1C_icon_res-flu, e trechos explicativos em 1C_txt_res-flu para manter clareza e hierarquia visual.",
+    "modules": [
+      {
+        "module_position": 1,
+        "module_name": "header_res-flu",
+        "module_purpose": "Header principal do email",
+        "content_mapping": {
+          "title": "Limite Garantido",
+          "text": "Aplicou, liberou. Simples, rápido e seguro!"
+        },
+        "source_sections": [0],
+        "content_elements_used": ["header"]
+      },
+      {
+        "module_position": 2,
+        "module_name": "1C_name_res-flu",
+        "module_purpose": "Saudação personalizada",
+        "content_mapping": {
+          "title": "Olá, %%=ProperCase([Primeiro_Nome])=%%."
+        },
+        "source_sections": [1],
+        "content_elements_used": ["titulo"]
+      },
+      {
+        "module_position": 3,
+        "module_name": "1C_txt_res-flu",
+        "module_purpose": "Apresentação do benefício e contexto",
+        "content_mapping": {
+          "text": "Você sabia que é possível aumentar cada vez mais o seu limite do cartão de crédito sem precisar passar por uma nova análise de crédito?  \nCom o Limite Garantido do Itaú Personnalité é assim: quanto mais você aplica no Cofrinhos pelo app, mais limite é disponibilizado no seu cartão de crédito para usar como quiser!"
+        },
+        "source_sections": [1],
+        "content_elements_used": ["paragrafo"]
+      },
+      {
+        "module_position": 4,
+        "module_name": "1C_line_res-flu",
+        "module_purpose": "Separação visual entre apresentação e benefícios",
+        "content_mapping": {},
+        "source_sections": [1,2],
+        "content_elements_used": []
+      },
+      {
+        "module_position": 5,
+        "module_name": "1C_tit_res-flu",
+        "module_purpose": "Introdução de benefícios destacados",
+        "content_mapping": {
+          "title": "Continue aplicando para ter um limite cada vez maior:"
+        },
+        "source_sections": [2],
+        "content_elements_used": ["subtitulo"]
+      },
+      {
+        "module_position": 6,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Benefício: aumento proporcional ao valor reservado",
+        "content_mapping": {
+          "icon": "icone-beneficio-valor",
+          "title": "Para cada R$ 1,00 reservado, você tem R$ 1,00 de aumento de limite"
+        },
+        "source_sections": [2],
+        "content_elements_used": ["topico"]
+      },
+      {
+        "module_position": 7,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Benefício: aumento automático",
+        "content_mapping": {
+          "icon": "icone-automatico",
+          "title": "Seu limite aumenta de forma automática, sem complicação"
+        },
+        "source_sections": [2],
+        "content_elements_used": ["topico"]
+      },
+      {
+        "module_position": 8,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Benefício: limite ampliado e flexibilidade",
+        "content_mapping": {
+          "icon": "icone-permanencia",
+          "title": "Mantenha seu dinheiro aplicado no Cofrinhos para ter seu limite ampliado de forma permanente"
+        },
+        "source_sections": [2],
+        "content_elements_used": ["topico"]
+      },
+      {
+        "module_position": 9,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Benefício: decisão está na mão do cliente",
+        "content_mapping": {
+          "icon": "icone-flexibilidade",
+          "title": "Você decide quando aumentar seu limite: do seu jeito e no seu tempo"
+        },
+        "source_sections": [2],
+        "content_elements_used": ["topico"]
+      },
+      {
+        "module_position": 10,
+        "module_name": "1C_line_res-flu",
+        "module_purpose": "Separação visual antes da finalização",
+        "content_mapping": {},
+        "source_sections": [2,3],
+        "content_elements_used": []
+      },
+      {
+        "module_position": 11,
+        "module_name": "1C_txt_res-flu",
+        "module_purpose": "Fechamento e instrução de acesso",
+        "content_mapping": {
+          "text": "Mais limite para fazer suas compras e mais liberdade para utilizar o seu dinheiro.\nAcesse o App Itaú Personnalité em Produtos > Cartões > Limite do Cartão > Limite Garantido e saiba mais."
+        },
+        "source_sections": [3],
+        "content_elements_used": ["paragrafo"]
+      }
+    ]
+  },
+  "layout_analysis": {
+    "content_distribution": "O conteúdo ficou organizado em três grandes blocos: saudação e explicação inicial, blocos destacados para cada benefício/tópico, e instrução de fechamento. Cada tópico foi mapeado em um módulo dedicado, mantendo clareza e permitindo escaneabilidade. Títulos, tópicos e parágrafos foram separados em módulos específicos que favorecem a leitura.",
+    "visual_hierarchy": "A hierarquia inicia com o header em destaque, seguido da saudação personalizada, apresentação, divisão visual, blocos de benefícios com ícones (que se destacam pela iconografia e reforçam cada atributo), e finalizando com instrução clara ao usuário. As linhas divisórias criam marcos visuais claros entre blocos principais.",
+    "strategic_notes": "Optou-se pelo uso de 1C_icon_res-flu para todos os benefícios para garantir destaque visual individual a cada tópico. As linhas divisórias ajudam a separar logicamente os grandes blocos do email, enquanto headers e títulos reforçam o início de cada área. Não foi usado nenhum módulo binário nem imagem pois não havia conteúdo compatível com esses formatos no input."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "module_name": "header_res-flu",
+  "module_description": "Módulo de uma coluna para Header com Título, Texto e Botão",
+  "supported_types": ["titulo", "paragrafo", "cta"],
+  "purpose": "Capturar a atenção do leitor com uma mensagem forte e um botão de call-to-action no topo do e-mail.",
+  "usage_context": [
+    "topo",
+    "header principal",
+    "primeira seção",
+    "Topo logo após abertura para destacar uma oferta/principal mensagem",
+    "Após introdução para promover produto/serviço-chave",
+    "Em campanhas promocionais e de lançamento",
+    "No início do corpo do e-mail para comunicação de benefício central",
+    "Em e-mails de onboarding para destacar primeiro passo ou ação desejada",
+    "Para campanhas de cross-sell ou up-sell destacando produtos complementares",
+    "Para e-mails transacionais com o status da transação em destaque"
+  ],
+  "accepts": {
+    "title": {
+      "required": false,
+      "max_length": 80
+    },
+    "text": {
+      "required": false,
+      "max_length": 150
+    },
+    "button": {
+      "required": false,
+      "max_length": 20
+    }
+  },
+  "possible_structures": [
+    ["title", "text", "button"],
+    ["title", "text"],
+    ["title", "button"],
+    ["title"],
+    ["text", "button"],
+    ["text"]
+  ],
+  "visual_priority": "máxima",
+  "strategic_recommendations": [
+    "Ideal para introduzir ofertas principais ou mensagens chave.",
+    "Aproveitar para mensagens que precisam de alta visibilidade.",
+    "Posicionar como a primeira interação para direcionar o leitor ao objetivo principal.",
+    "Não repetir em diferentes seções do e-mail.",
+    "Melhor opção para Header em e-mails transacionais."
+  ],
+  "variation_allowed": [
+    "Alterar alinhamento dos elementos: centralizado ou esquerda"
+  ],
+  "examples": [
+    {
+      "title": "Descubra Nossas Ofertas",
+      "text": "Explore descontos exclusivos para você hoje.",
+      "button": "Veja agora"
+    }
+  ],
+  "tags": [
+    "cabeçalho",
+    "CTA",
+    "oferta principal"
+  ]
+}

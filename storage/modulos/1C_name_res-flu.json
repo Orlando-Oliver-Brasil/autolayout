@@ -1,0 +1,51 @@
+{
+  "module_name": "1C_name_res-flu",
+  "module_description": "Modulo de 1 coluna para Saudação com Nome e Texto",
+  "supported_types": ["titulo", "paragrafo"],
+  "purpose": "Estabelecer conexão inicial personalizada, saudando o destinatário pelo nome para criar proximidade e engajamento logo no início do e-mail.",
+  "usage_context": [
+    "Introdução de e-mails de boas-vindas",
+    "Primeiro bloco após um título principal"
+  ],
+  "accepts": {
+    "title": {
+      "required": false,
+      "type": "texto curto",
+      "char_limit": 60,
+      "content_suport": true
+    },
+    "text": {
+      "required": false,
+      "type": "texto parágrafo",
+      "char_limit": 160,
+      "content_suport": true
+    }
+  },
+  "possible_structures": [
+    "first_name + texto"
+  ],
+  "visual_priority": "alta",
+  "strategic_recommendations": [
+    "Use sempre no início para gerar identificação imediata e aumentar as taxas de leitura.",
+    "Ideal em fluxos de onboarding, fidelização e campanhas em que o relacionamento é a prioridade.",
+    "Evite o uso repetitivo em um mesmo e-mail; limite a personalização nominal ao primeiro bloco relevante."
+  ],
+  "variation_allowed": [
+    "Alterar alinhamento dos elementos (title e text) a esquerda ou centralizado"
+  ],
+  "examples": [
+    {
+      "title": "Olá, %%=ProperCase([Primeiro_Nome])=%%.",
+      "text": "Preparei novidades que combinam com você! Confira nossas ofertas exclusivas e seja o primeiro a aproveitar."
+    }
+  ],
+  "tags": [
+    "personalização",
+    "boas-vindas",
+    "relacionamento",
+    "saudação",
+    "onboarding",
+    "engajamento",
+    "humanização"
+  ]
+}

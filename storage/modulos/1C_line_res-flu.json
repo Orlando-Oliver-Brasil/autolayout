@@ -1,0 +1,54 @@
+{
+  "module_name": "1C_line_res-flu",
+  "module_description": "Separador Horizontal",
+  "supported_types": [],
+  "purpose": "Separar ou agrupar visualmente diferentes seções do e-mail, ajudando a organizar o fluxo de leitura e delimitar blocos de conteúdo para facilitar a compreensão.",
+  "usage_context": [
+    "Entre seções de conteúdo distintos (ex: entre destaque e benefícios, entre produtos)",
+    "Antes de ações importantes (ex: antes de um bloco de CTA)",
+    "Após blocos densos de informação, para descanso visual",
+    "Para delimitar início ou fim de uma sessão temática",
+    "Entre ofertas de categorias diferentes"
+  ],
+  "accepts": {
+    "line": {
+      "required": false,
+      "content_suport": false
+    }
+  },
+  "possible_structures": [
+    ["line"]
+  ],
+  "visual_priority": "baixa",
+  "strategic_recommendations": [
+    "Utilize para modular a leitura e melhorar a escaneabilidade entre blocos distintos.",
+    "Evite sobrecarga: O excesso de divisores visualmente fragmenta demais o e-mail e pode confundir ou cansar.",
+    "Reforce a hierarquia: Use preferencialmente entre blocos de importância ou temas diferentes, não entre itens de um mesmo grupo.",
+    "Combine com cabeçalhos para separar seções — ex: divisor + título de nova sessão.",
+    "Em campanhas longas, utilize para garantir ritmo visual e evitar que conteúdos se misturem.",
+    "Não utilize como substituto para espaçamento natural entre elementos!",
+    "Personalize a cor do divisor para reforçar branding sutilmente (quando apropriado).",
+    "Em emails de onboarding, use divisores apenas onde há mudança real de assunto."
+  ],
+  "variation_allowed": [
+    "Cor da linha (seguindo identidade visual ou cinza neutro)",
+    "Espessura (mínima recomendada 1px, máxima 4px para destaques pontuais — evitar uso sistemático de linhas grossas)",
+    "Largura (total ou centralizada em menor proporção para gerar leveza)",
+    "Estilo (apenas sólido, tracejado ou pontilhado para campanhas especiais/temáticas)",
+    "Espaçamento (margens superiores/inferiores customizáveis)"
+  ],
+  "examples": [
+    {
+      "line": true
+    }
+  ],
+  "tags": [
+    "divisor",
+    "modularidade",
+    "organização",
+    "fluidez visual",
+    "escaneabilidade",
+    "transição",
+    "estruturação"
+  ]
+}

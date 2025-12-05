@@ -1,0 +1,98 @@
+{
+  "email_layout": {
+    "total_modules": 6,
+    "layout_strategy": "Estruturou-se o e-mail para criar um fluxo claro de leitura, valorizando abertura personalizada, explicação do produto, benefícios em sequência destacada e instrução final. Agrupou-se tópicos correlatos em módulos de 2 colunas para melhorar escaneabilidade e usou módulos de destaque para partes-chave.",
+    "modules": [
+      {
+        "module_position": 1,
+        "module_name": "header_res-flu",
+        "module_purpose": "Header principal do email",
+        "content_mapping": {
+          "title": "Limite Garantido",
+          "text": "Aplicou, liberou. Simples, rápido e seguro!"
+        },
+        "source_sections": [0],
+        "content_elements_used": ["header"]
+      },
+      {
+        "module_position": 2,
+        "module_name": "1C_tit_res-flu",
+        "module_purpose": "Saudação personalizada e abertura",
+        "content_mapping": {
+          "title": "Olá, %%=ProperCase([Primeiro_Nome])=%%."
+        },
+        "source_sections": [1],
+        "content_elements_used": ["titulo"]
+      },
+      {
+        "module_position": 3,
+        "module_name": "1C_txt_res-flu",
+        "module_purpose": "Introdução explicativa sobre o Limite Garantido",
+        "content_mapping": {
+          "text": "Você sabia que é possível aumentar cada vez mais o seu limite do cartão de crédito sem precisar passar por uma nova análise de crédito?\nCom o Limite Garantido do Itaú Personnalité é assim: quanto mais você aplica no Cofrinhos pelo app, mais limite é disponibilizado no seu cartão de crédito para usar como quiser!"
+        },
+        "source_sections": [2],
+        "content_elements_used": ["paragrafo"]
+      },
+      {
+        "module_position": 4,
+        "module_name": "1C_tit_res-flu",
+        "module_purpose": "Subtítulo destaque para benefícios",
+        "content_mapping": {
+          "title": "Continue aplicando para ter um limite cada vez maior:"
+        },
+        "source_sections": [3],
+        "content_elements_used": ["subtitulo"]
+      },
+      {
+        "module_position": 5,
+        "module_name": "2C_icon_res-flu",
+        "module_purpose": "Primeiro agrupamento de tópicos/benefícios principais",
+        "content_mapping": {
+          "left": {
+            "title": "Para cada R$ 1,00 reservado",
+            "text": "Você tem R$ 1,00 de aumento de limite"
+          },
+          "right": {
+            "title": "Seu limite aumenta de forma automática",
+            "text": "Sem complicação"
+          }
+        },
+        "source_sections": [3],
+        "content_elements_used": ["topico"]
+      },
+      {
+        "module_position": 6,
+        "module_name": "2C_icon_res-flu",
+        "module_purpose": "Segundo agrupamento de tópicos/benefícios complementares",
+        "content_mapping": {
+          "left": {
+            "title": "Mantenha seu dinheiro aplicado",
+            "text": "Limite ampliado de forma permanente"
+          },
+          "right": {
+            "title": "Você decide quando aumentar",
+            "text": "Do seu jeito e no seu tempo"
+          }
+        },
+        "source_sections": [3],
+        "content_elements_used": ["topico"]
+      },
+      {
+        "module_position": 7,
+        "module_name": "1C_txt_res-flu",
+        "module_purpose": "Encerramento e instrução de ação",
+        "content_mapping": {
+          "text": "Mais limite para fazer suas compras e mais liberdade para utilizar o seu dinheiro.\nAcesse o App Itaú Personnalité em Produtos > Cartões > Limite do Cartão > Limite Garantido e saiba mais."
+        },
+        "source_sections": [4],
+        "content_elements_used": ["paragrafo"]
+      }
+    ]
+  },
+  "layout_analysis": {
+    "content_distribution": "O conteúdo foi distribuído em módulos que segmentam saudação, explicação, benefícios principais agrupados e fechamento. Títulos isolados e tópicos agrupados melhoram o fluxo visual, e a instrução final fica evidente.",
+    "visual_hierarchy": "Header e saudação personalizam e atraem atenção. Subtítulos e tópicos com agrupamento em dois blocos destacam benefícios, seguidos por instruções claras, criando fluxo lógico e priorizando pontos-chave.",
+    "strategic_notes": "A escolha de módulos de agrupamento para tópicos enriquece a escaneabilidade e reduz fragmentação. O uso de títulos isolados e parágrafos para iniciar e finalizar reforça a diferenciação das etapas do conteúdo. CTA final permanece claro e visível."
+  }
+}

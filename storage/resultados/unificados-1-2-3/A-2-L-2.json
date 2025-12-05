@@ -1,0 +1,120 @@
+{
+  "email_layout": {
+    "total_modules": 7,
+    "layout_strategy": "O layout prioriza clareza, hierarquia informacional e escaneabilidade, segmentando cada mensagem-chave em módulos bem definidos e maximizando agrupamentos por seção. O header sintetiza o tema, enquanto cada bloco de conteúdo aprofundado (benefícios, novidades, orientações) é traduzido em módulos otimizados, agrupando subtítulo/parágrafo quando possível e destacando CTA.",
+    "modules": [
+      {
+        "module_position": 1,
+        "module_name": "header_res-flu",
+        "module_purpose": "Header principal para o assunto do e-mail",
+        "content_mapping": {
+          "title": "Informações e novidades sobre investimentos"
+        },
+        "source_sections": [],
+        "content_elements_used": [
+          "header"
+        ]
+      },
+      {
+        "module_position": 2,
+        "module_name": "1C_tit_res-flu",
+        "module_purpose": "Apresentação personalizada do convite à descoberta",
+        "content_mapping": {
+          "title": "%%Primeiro_Nome%%, confira o que te espera no aplicativo vizinho:"
+        },
+        "source_sections": [
+          1
+        ],
+        "content_elements_used": [
+          "titulo"
+        ]
+      },
+      {
+        "module_position": 3,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Primeiro benefício: atualizações do mercado",
+        "content_mapping": {
+          "icon": "icone-atualizacoes-mercado",
+          "title": "Atualizações do mercado diretamente com quem entende",
+          "text": "Descubra as notícias que movimentam o mercado a partir de conteúdos produzidos pelo nosso time especializado."
+        },
+        "source_sections": [
+          2
+        ],
+        "content_elements_used": [
+          "subtitulo",
+          "paragrafo"
+        ]
+      },
+      {
+        "module_position": 4,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Segundo benefício: conteúdo para aprofundamento",
+        "content_mapping": {
+          "icon": "icone-aprofundamento",
+          "title": "Conteúdo relevante para quem quer se aprofundar",
+          "text": "Conheça e entenda como funcionam os principais produtos, estratégias e serviços disponíveis no mercado."
+        },
+        "source_sections": [
+          3
+        ],
+        "content_elements_used": [
+          "subtitulo",
+          "paragrafo"
+        ]
+      },
+      {
+        "module_position": 5,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Terceiro benefício: novidades Itaú Uniclass",
+        "content_mapping": {
+          "icon": "icone-novidades",
+          "title": "Novidades que o Itaú Uniclass tem para você",
+          "text": "Saiba sobre novas funcionalidades e serviços no aplicativo, lançamentos de produtos e mais: tudo isso em um só lugar."
+        },
+        "source_sections": [
+          4
+        ],
+        "content_elements_used": [
+          "subtitulo",
+          "paragrafo"
+        ]
+      },
+      {
+        "module_position": 6,
+        "module_name": "1C_txt_res-flu",
+        "module_purpose": "Mensagem de fechamento e posicionamento institucional",
+        "content_mapping": {
+          "text": "Com o canal certo, você investe seu tempo na direção do seu futuro e otimiza seus investimentos com informações de excelência."
+        },
+        "source_sections": [
+          5
+        ],
+        "content_elements_used": [
+          "paragrafo"
+        ]
+      },
+      {
+        "module_position": 7,
+        "module_name": "1C_icon_res-flu",
+        "module_purpose": "Call-to-action final para acesso ao canal de investimentos",
+        "content_mapping": {
+          "icon": "icone-cta",
+          "text": "",
+          "button": "acessar agora"
+        },
+        "source_sections": [
+          6
+        ],
+        "content_elements_used": [
+          "cta"
+        ]
+      }
+    ]
+  },
+  "layout_analysis": {
+    "content_distribution": "Header apresenta o tema central, seguido de convite personalizado. Cada benefício ou aspecto é ilustrado em seu próprio módulo, agrupando subtítulo e parágrafo conforme permitido (possible_structures validadas). O texto de reforço institucional e o CTA são separados para máxima clareza.",
+    "visual_hierarchy": "O e-mail inicia com subject/theme dominante no header, evolui para conselho personalizado, apresenta informações e vantagens em blocos com ícones (escaneabilidade), e termina com mensagem de reforço e ação clara.",
+    "strategic_notes": "Agrupamento otimizado onde permitido (subtitulo+paragrafo nos módulos de ícone), todos os tópicos principais destacados visualmente, uso correto das estruturas possíveis em cada módulo, sem campos inventados. O CTA final foi implementado em 1C_icon_res-flu com 'text' vazio para respeitar a estrutura obrigatória (não permitido apenas ['icon','button'])."
+  }
+}
