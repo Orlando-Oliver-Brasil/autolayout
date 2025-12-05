@@ -715,11 +715,186 @@
       "_type": "request"
     },
     {
+      "_id": "req_lauda_create",
+      "parentId": "fld_lauda",
+      "modified": 1733428800000,
+      "created": 1733428800000,
+      "url": "{{ _.base_url }}/lauda-processing",
+      "name": "Criar Processamento",
+      "description": "Inicia processamento de lauda com pipeline IA",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"content\": \"[Marca]\\nItaú Massificado\\n\\n[Produto/Serviço]\\nLimite Garantido - Cofrinhos\\n\\n[Header]\\nLimite Garantido\\nAplicou, liberou. Simples, rápido e seguro!\\n\\nOlá, %%=ProperCase([Primeiro_Nome])=%%.\\nVocê sabia que é possível aumentar cada vez mais o seu limite do cartão de crédito sem precisar passar por uma nova análise de crédito?\\nCom o Limite Garantido do Itaú Personnalité é assim: quanto mais você aplica no Cofrinhos pelo app, mais limite é disponibilizado no seu cartão de crédito para usar como quiser!\\nContinue aplicando para ter um limite cada vez maior:\\nPara cada R$ 1,00 reservado, você tem R$ 1,00 de aumento de limite\\nSeu limite aumenta de forma automática, sem complicação\\nMantenha seu dinheiro aplicado no Cofrinhos para ter seu limite ampliado de forma permanente\\nVocê decide quando aumentar seu limite: do seu jeito e no seu tempo\\nMais limite para fazer suas compras e mais liberdade para utilizar o seu dinheiro.\\nAcesse o App Itaú Personnalité em Produtos > Cartões > Limite do Cartão > Limite Garantido e saiba mais.\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1733428800000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_lauda_status",
+      "parentId": "fld_lauda",
+      "modified": 1733428800000,
+      "created": 1733428800000,
+      "url": "{{ _.base_url }}/lauda-processing/1",
+      "name": "Consultar Status",
+      "description": "Consulta status e resultado do processamento",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1733428700000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_lauda_list",
+      "parentId": "fld_lauda",
+      "modified": 1733428800000,
+      "created": 1733428800000,
+      "url": "{{ _.base_url }}/lauda-processing",
+      "name": "Listar Processamentos",
+      "description": "Lista todos os processamentos com paginação",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "name": "page",
+          "value": "1",
+          "disabled": false
+        },
+        {
+          "name": "limit",
+          "value": "20",
+          "disabled": false
+        },
+        {
+          "name": "status",
+          "value": "completed",
+          "disabled": true
+        }
+      ],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1733428600000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_lauda_reprocess",
+      "parentId": "fld_lauda",
+      "modified": 1733428800000,
+      "created": 1733428800000,
+      "url": "{{ _.base_url }}/lauda-processing/1/reprocess",
+      "name": "Reprocessar",
+      "description": "Reprocessa uma lauda existente",
+      "method": "POST",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1733428500000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_lauda_delete",
+      "parentId": "fld_lauda",
+      "modified": 1733428800000,
+      "created": 1733428800000,
+      "url": "{{ _.base_url }}/lauda-processing/1",
+      "name": "Deletar Processamento",
+      "description": "Remove um processamento (apenas se não estiver em andamento)",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1733428400000,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_lauda",
+      "parentId": "wrk_autolayout",
+      "modified": 1733428800000,
+      "created": 1733428800000,
+      "name": "🤖 Processamento de Lauda",
+      "description": "Pipeline de IA para geração de layouts",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1701640000000,
+      "_type": "request_group"
+    },
+    {
       "_id": "fld_auth",
       "parentId": "wrk_autolayout",
       "modified": 1701648000000,
       "created": 1701648000000,
-      "name": "Authentication",
+      "name": "🔐 Autenticação",
       "description": "",
       "environment": {},
       "environmentPropertyOrder": null,

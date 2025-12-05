@@ -31,6 +31,7 @@ Sistema backend robusto para plataforma de geração de layouts de email com ass
 | **Validação** | [VineJS](https://vinejs.dev/) | 3.x | Validação de dados robusta |
 | **Autenticação** | JWT + Access Tokens | - | Sistema de autenticação |
 | **Email** | SMTP + Templates | - | Sistema de comunicação |
+| **IA** | [OpenAI Assistants API](https://platform.openai.com/) | v2 | Pipeline de IA especializado |
 
 ## 📋 Pré-requisitos
 
@@ -87,8 +88,11 @@ SMTP_SECURE=false
 SMTP_USER=your-email@gmail.com
 SMTP_PASS=your-app-password
 
-# OpenAI Integration (Future)
+# OpenAI Integration (Assistentes de IA)
 OPENAI_API_KEY=sua_api_key_aqui
+ASSISTANT_1_ID=
+ASSISTANT_2_ID=
+ASSISTANT_3_ID=
 ```
 
 ### 2. Gerar Chave da Aplicação
@@ -121,7 +125,7 @@ node ace db:seed
 ### 📊 Estrutura do Banco
 
 | Tabela | Propósito | Relacionamentos |
-|--------|-----------|-----------------|
+|--------|-----------|------------------|
 | `users` | Usuários do sistema | - |
 | `groups` | Organizações principais | hasMany squads, users |
 | `squads` | Equipes especializadas | belongsTo group, hasMany users |
@@ -129,6 +133,8 @@ node ace db:seed
 | `user_squads` | Pivot: usuário ↔ squad | role, group_id, joined_at |
 | `access_tokens` | Tokens JWT ativos | belongsTo user |
 | `layouts` | Layouts gerados | belongsTo user |
+| `lauda_processings` | **Pipeline IA** - Processamentos de lauda | belongsTo user |
+| `lauda_processings` | **Pipeline IA** - Processamentos de lauda | belongsTo user |
 
 ## 🏃 Execução
 
@@ -193,11 +199,87 @@ curl http://127.0.0.1:3333
 
 ### 🔗 Associações
 | Método | Endpoint | Descrição |
-|--------|----------|-----------|
+|--------|----------|-----------||
 | `POST` | `/api/v1/users/add-to-group` | Adicionar usuário ao grupo |
 | `POST` | `/api/v1/users/add-to-squad` | Adicionar usuário ao squad |
 | `DELETE` | `/api/v1/users/remove-from-group` | Remover usuário do grupo |
 | `DELETE` | `/api/v1/users/remove-from-squad` | Remover usuário do squad |
+
+### 🤖 Processamento de Lauda (IA Pipeline)
+| Método | Endpoint | Descrição | Auth |
+|--------|----------|-----------|------|
+| `POST` | `/api/v1/lauda-processing` | Iniciar processamento de lauda | ✅ |
+| `GET` | `/api/v1/lauda-processing/:id` | Consultar status/resultado | ✅ |
+| `GET` | `/api/v1/lauda-processing` | Listar processamentos | ✅ |
+| `POST` | `/api/v1/lauda-processing/:id/reprocess` | Reprocessar lauda | ✅ |
+| `DELETE` | `/api/v1/lauda-processing/:id` | Remover processamento | ✅ |
+
+#### 📊 Exemplo de Request - Processamento
+```json
+{
+  "content": "[Marca]\nItaú\n\n[Produto/Serviço]\nCartão de Crédito\n\n[Header]\nSeu cartão sem anuidade\n\nConheça as vantagens do nosso cartão sem anuidade..."
+}
+```
+
+#### 📈 Exemplo de Response - Status
+```json
+{
+  "data": {
+    "id": 1,
+    "status": "completed",
+    "startedAt": "2024-01-15T10:30:00Z",
+    "completedAt": "2024-01-15T10:32:15Z",
+    "assistant1Result": { /* resultado da extração */ },
+    "assistant2Result": { /* layout com módulos */ },
+    "assistant3Result": { /* layout final com ícones */ },
+    "finalLayout": { /* resultado final processado */ },
+    "processingTime": 135000
+  }
+}
+```
+
+#### 🔄 Status de Processamento
+- **`processing`**: Em andamento (pipeline executando)
+- **`completed`**: Concluído com sucesso
+- **`failed`**: Falhou (veja errorMessage)
+
+### 🤖 Processamento de Lauda (IA Pipeline)
+| Método | Endpoint | Descrição | Auth |
+|--------|----------|-----------|------|
+| `POST` | `/api/v1/lauda-processing` | Iniciar processamento de lauda | ✅ |
+| `GET` | `/api/v1/lauda-processing/:id` | Consultar status/resultado | ✅ |
+| `GET` | `/api/v1/lauda-processing` | Listar processamentos | ✅ |
+| `POST` | `/api/v1/lauda-processing/:id/reprocess` | Reprocessar lauda | ✅ |
+| `DELETE` | `/api/v1/lauda-processing/:id` | Remover processamento | ✅ |
+
+#### 📊 Exemplo de Request - Processamento
+```json
+{
+  "content": "[Marca]\nItaú\n\n[Produto/Serviço]\nCartão de Crédito\n\n[Header]\nSeu cartão sem anuidade\n\nConheça as vantagens do nosso cartão sem anuidade..."
+}
+```
+
+#### 📈 Exemplo de Response - Status
+```json
+{
+  "data": {
+    "id": 1,
+    "status": "completed",
+    "startedAt": "2024-01-15T10:30:00Z",
+    "completedAt": "2024-01-15T10:32:15Z",
+    "assistant1Result": { /* resultado da extração */ },
+    "assistant2Result": { /* layout com módulos */ },
+    "assistant3Result": { /* layout final com ícones */ },
+    "finalLayout": { /* resultado final processado */ },
+    "processingTime": 135000
+  }
+}
+```
+
+#### 🔄 Status de Processamento
+- **`processing`**: Em andamento (pipeline executando)
+- **`completed`**: Concluído com sucesso
+- **`failed`**: Falhou (veja errorMessage)
 
 ### 📊 Relatórios e Consultas
 | Método | Endpoint | Descrição |
