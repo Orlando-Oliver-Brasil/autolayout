@@ -129,6 +129,15 @@ router.group(() => {
     router.post('/layouts/suggestions', '#controllers/layouts_controller.generateSuggestions')
 
     /**
+     * Rotas de processamento de lauda
+     */
+    router.post('/lauda-processing', '#controllers/lauda_processing_controller.store')
+    router.get('/lauda-processing/:id', '#controllers/lauda_processing_controller.show')
+    router.get('/lauda-processing', '#controllers/lauda_processing_controller.index')
+    router.post('/lauda-processing/:id/reprocess', '#controllers/lauda_processing_controller.reprocess')
+    router.delete('/lauda-processing/:id', '#controllers/lauda_processing_controller.destroy')
+
+    /**
      * Rotas administrativas (apenas super admins)
      */
     router.group(() => {
